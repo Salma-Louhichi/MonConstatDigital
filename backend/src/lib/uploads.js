@@ -1,0 +1,100 @@
+import { randomUUID } from 'node:crypto';
+import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { join, resolve } from 'node:path';
+
+import multer from 'multer';
+
+import { HttpError } from './errors.js';
+
+const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
+const MAX_PDF_BYTES = 5 * 1024 * 1024;
+
+/** Dossier des fichiers envoyés. Hors du dossier public, servi par des routes protégées. */
+export const uploadDir = () => resolve(process.env.UPLOAD_DIR ?? 'uploads');
+
+/** Garde les images en mémoire : jusqu'à `max` fichiers dans le champ `field`. */
+export const imageArray = (field, max) =>
+  multer({
+    storage: multer.memoryStorage(),
+    limits: { fileSize: MAX_IMAGE_BYTES, files: max },
+  }).array(field, max);
+
+/** Garde l'image en mémoire, un seul fichier dans le champ `field`. */
+export const singleImage = (field) =>
+  multer({
+    storage: multer.memoryStorage(),
+    limits: { fileSize: MAX_IMAGE_BYTES, files: 1 },
+  }).single(field);
+
+// Le type est lu dans les premiers octets : l'en-tête Content-Type du client ne suffit pas.
+function imageExtension(buffer) {
+  if (buffer.length < 12) return null;
+  if (buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) return 'jpg';
+  if (buffer.subarray(0, 8).equals(Buffer.from('89504e470d0a1a0a', 'hex'))) {
+    return 'png';
+  }
+  if (
+    buffer.subarray(0, 4).toString('ascii') === 'RIFF' &&
+    buffer.subarray(8, 12).toString('ascii') === 'WEBP'
+  ) {
+    return 'webp';
+  }
+  return null;
+}
+
+/** Refuse ce qui n'est pas une image JPEG, PNG ou WebP. Renvoie l'extension. */
+export function assertImage(file) {
+  if (!file) {
+    throw new HttpError(400, 'FILE_REQUIRED', 'Aucune image reçue.');
+  }
+  const extension = imageExtension(file.buffer);
+  if (!extension) {
+    throw new HttpError(
+      415,
+      'UNSUPPORTED_IMAGE',
+      'Format accepté : JPEG, PNG ou WebP.',
+    );
+  }
+  return extension;
+}
+
+/** Enregistre l'image reçue et renvoie son nom de fichier. */
+export async function saveImage(file, folder) {
+  const extension = assertImage(file);
+  const dir = join(uploadDir(), folder);
+  await mkdir(dir, { recursive: true });
+  const name = `${randomUUID()}.${extension}`;
+  await writeFile(join(dir, name), file.buffer);
+  return name;
+}
+
+export async function deleteImage(name, folder) {
+  if (name) await rm(join(uploadDir(), folder, name), { force: true });
+}
+
+export const imagePath = (name, folder) => join(uploadDir(), folder, name);
+
+/** Garde le PDF en mémoire, un seul fichier dans le champ `field`. */
+export const singlePdf = (field) =>
+  multer({
+    storage: multer.memoryStorage(),
+    limits: { fileSize: MAX_PDF_BYTES, files: 1 },
+  }).single(field);
+
+/** Enregistre un fichier PDF et renvoie son nom. */
+export async function savePdf(file, folder = 'constats') {
+  if (!file) {
+    throw new HttpError(400, 'FILE_REQUIRED', 'Aucun fichier PDF reçu.');
+  }
+  if (file.buffer.length < 4 || file.buffer.subarray(0, 4).toString('ascii') !== '%PDF') {
+    throw new HttpError(415, 'UNSUPPORTED_FILE', 'Format accepté : PDF uniquement.');
+  }
+  const dir = join(uploadDir(), folder);
+  await mkdir(dir, { recursive: true });
+  const name = `${randomUUID()}.pdf`;
+  await writeFile(join(dir, name), file.buffer);
+  return name;
+}
+
+export const filePath = (name, folder = 'constats') => join(uploadDir(), folder, name);
+
