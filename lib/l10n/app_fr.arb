@@ -1,0 +1,2087 @@
+{
+  "@@locale": "fr",
+  "claimsMyClaims": "Mes dossiers",
+  "claimsReceived": "Sinistres reçus",
+  "claimsCount": "{shown} sur {total} dossiers",
+  "@claimsCount": {
+    "placeholders": {
+      "shown": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsFilterHint": "Filtrer par numéro, statut ou gravité",
+  "claimsStatus": "Statut",
+  "claimsSeverity": "Gravité",
+  "claimsDate": "Date",
+  "claimsAllOf": "Tous : {label}",
+  "@claimsAllOf": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNoMatch": "Aucun dossier ne correspond.",
+  "claimsAgentSpace": "Espace agent",
+  "claimsAgentSubtitle": "Instruction des sinistres",
+  "claimsStatistics": "Statistiques",
+  "claimsNotifications": "Notifications",
+  "claimsToHandle": "À traiter",
+  "claimsExpertises": "Expertises",
+  "claimsClosedCount": "Clôturés",
+  "claimsPriority": "Dossiers prioritaires",
+  "claimsNothingToHandle": "Aucun dossier à traiter.",
+  "claimsAssistant": "Assistant",
+  "claimsMessaging": "Messagerie",
+  "claimsRequestedDocuments": "Pièces demandées",
+  "claimsUpload": "Déposer",
+  "claimsExpertiseTitle": "Expertise",
+  "claimsAppointmentOn": "Rendez-vous le {date}",
+  "@claimsAppointmentOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsTimeline": "Chronologie",
+  "claimsConstat": "Constat",
+  "claimsDocuments": "Pièces du dossier",
+  "claimsDownload": "Télécharger",
+  "claimsNoDocument": "Aucune pièce déposée.",
+  "claimsUploadDocument": "Déposer une pièce",
+  "claimsHandling": "Instruction",
+  "claimsDocMismatch": "Ne correspond pas à la demande.",
+  "claimsRejectedTitle": "Dossier rejeté",
+  "claimsClosedTitle": "Dossier clôturé",
+  "claimsReason": "Motif : {reason}",
+  "@claimsReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsResponsibilitySplit": "Responsabilité : A {a} %, B {b} %",
+  "@claimsResponsibilitySplit": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsIndemnity": "Indemnisation : {amount} TND",
+  "@claimsIndemnity": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsCircumstances": "Circonstances",
+  "claimsImpactPoint": "Point de choc",
+  "claimsObservations": "Observations",
+  "claimsNoConstat": "Aucune information de constat.",
+  "claimsLabelColon": "{label} : ",
+  "@claimsLabelColon": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsTakeCharge": "Prendre en charge",
+  "claimsRequestDocument": "Demander une pièce",
+  "claimsMoveAppointment": "Déplacer le rendez-vous",
+  "claimsAppointExpert": "Désigner un expert",
+  "claimsAttachReport": "Joindre le rapport d’expertise",
+  "claimsReject": "Rejeter le dossier",
+  "claimsDocument": "Pièce",
+  "claimsDetail": "Précision",
+  "claimsSendRequest": "Envoyer la demande",
+  "claimsExpert": "Expert",
+  "claimsSchedule": "Planifier",
+  "claimsReasonLabel": "Motif",
+  "claimsRejectAction": "Rejeter",
+  "claimsInvalidAmount": "Saisissez un montant valide.",
+  "claimsDecision": "Décision",
+  "claimsProposal": "Proposition : A {a} %, B {b} %. {reason}",
+  "@claimsProposal": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      },
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsIndemnityAmount": "Montant d'indemnisation (TND)",
+  "claimsCloseClaim": "Clôturer le dossier",
+  "claimsProposalFault": "{box} : manœuvre à risque de A.",
+  "@claimsProposalFault": {
+    "placeholders": {
+      "box": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsProposalParked": "A était en stationnement.",
+  "claimsProposalTurn": "{box} : partage par défaut.",
+  "@claimsProposalTurn": {
+    "placeholders": {
+      "box": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsProposalUnknown": "Cases insuffisantes : partage par défaut.",
+  "claimsSummaryOffline": "Synthèse indisponible hors connexion.",
+  "claimsDecisionHelp": "Aide à la décision",
+  "claimsOverdue": "Retard {days} j",
+  "@claimsOverdue": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsEstimate": "Estimation",
+  "claimsRange": "{low} à {high} TND",
+  "@claimsRange": {
+    "placeholders": {
+      "low": {
+        "type": "String"
+      },
+      "high": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsUsualDuration": "Durée habituelle",
+  "claimsDays": "{days} jours",
+  "@claimsDays": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsRejectionRisk": "Risque de rejet",
+  "claimsRiskLow": "faible",
+  "claimsRiskMedium": "moyen",
+  "claimsRiskHigh": "élevé",
+  "claimsRiskWithFactors": "{level} : {factors}",
+  "@claimsRiskWithFactors": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      },
+      "factors": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsRecommended": "Recommandée pour ce dossier",
+  "claimsToCheck": "À vérifier",
+  "claimsMissingDocuments": "Pièces manquantes",
+  "claimsRequest": "Demander",
+  "claimsSimilar": "Dossiers similaires",
+  "claimsSummaryBy": "Synthèse rédigée par {by}",
+  "@claimsSummaryBy": {
+    "placeholders": {
+      "by": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsSummaryRules": "Synthèse automatique, sans IA générative",
+  "claimsSummarizing": "Synthèse en cours",
+  "claimsSummarize": "Résumer le dossier",
+  "claimsModelDisclaimer": "Estimations issues d’un modèle entraîné sur des données simulées. La décision appartient à l’agent.",
+  "claimsDriverIdea1": "Où en est mon dossier ?",
+  "claimsDriverIdea2": "Quelles pièces dois-je déposer ?",
+  "claimsDriverIdea3": "Combien de temps ça va prendre ?",
+  "claimsAgentIdea1": "Que dois-je faire ensuite ?",
+  "claimsAgentIdea2": "Quels points vérifier ?",
+  "claimsAgentIdea3": "Quelle responsabilité proposes-tu ?",
+  "claimsAssistantUnavailable": "Assistant indisponible pour le moment. Réessayez plus tard.",
+  "claimsAssistantTitle": "Assistant {id}",
+  "@claimsAssistantTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsAssistantIntro": "Posez une question sur ce dossier. L’assistant informe, il ne prend aucune décision.",
+  "claimsAssistantReading": "L’assistant lit le dossier…",
+  "claimsYourQuestion": "Votre question",
+  "claimsSend": "Envoyer",
+  "claimsAutomaticAnswer": "Réponse automatique",
+  "claimsStatsServerOnly": "Statistiques disponibles avec le serveur.",
+  "claimsTotal": "Dossiers",
+  "claimsLate": "En retard",
+  "claimsAverageDuration": "Durée moyenne",
+  "claimsDaysShort": "{days} j",
+  "@claimsDaysShort": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsIndemnified": "Indemnisé (TND)",
+  "claimsByStatus": "Dossiers par statut",
+  "claimsSystemVsAgents": "Le système face aux agents",
+  "claimsNoDecisionYet": "Pas encore de décision à comparer.",
+  "claimsAgreement": "Sur {count} décision(s), la responsabilité proposée a été retenue dans {percent} % des cas.",
+  "@claimsAgreement": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsAverageGap": "Écart moyen avec le montant décidé : {gap} TND.",
+  "@claimsAverageGap": {
+    "placeholders": {
+      "gap": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsModel": "Modèle",
+  "claimsModelVersion": "Version {version}",
+  "@claimsModelVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsTrainedOn": "Entraîné sur {synthetic} cas simulés et {real} dossiers réels.",
+  "@claimsTrainedOn": {
+    "placeholders": {
+      "synthetic": {
+        "type": "String"
+      },
+      "real": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsModelTest": "Test : erreur moyenne {mae} TND, AUC rejet {auc}.",
+  "@claimsModelTest": {
+    "placeholders": {
+      "mae": {
+        "type": "String"
+      },
+      "auc": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsSimulatedWarning": "Ces mesures portent sur des données simulées : elles ne disent pas encore si le modèle est juste sur de vrais sinistres.",
+  "claimsSuggestionsUnavailable": "Suggestions indisponibles.",
+  "claimsNoMessages": "Aucun message sur ce dossier.",
+  "claimsSuggestReply": "Suggérer une réponse",
+  "claimsAttachFile": "Joindre un fichier",
+  "claimsYourMessage": "Votre message",
+  "claimsOneConversation": "Une conversation par dossier",
+  "claimsNoClaims": "Aucun dossier.",
+  "claimsNoMessage": "Aucun message",
+  "claimsMarkAllRead": "Tout marquer lu",
+  "claimsNoNotification": "Aucune notification.",
+  "claimsOffline": "Hors ligne : vos changements partiront au retour du réseau",
+  "claimsFileUnavailable": "Fichier indisponible pour le moment.",
+  "claimsValueDraft": "Brouillon",
+  "claimsValueDeclared": "Déclaré",
+  "claimsValueSigned": "Constat signé",
+  "claimsValueTransmitted": "Transmis",
+  "claimsValueInReview": "En instruction",
+  "claimsValueDocumentRequested": "Pièce demandée",
+  "claimsValueExpertise": "Expertise",
+  "claimsValueClosed": "Clôturé",
+  "claimsValueRejected": "Rejeté",
+  "claimsValueCollision": "Collision",
+  "claimsValueOffRoad": "Sortie de route",
+  "claimsValuePedestrian": "Piéton",
+  "claimsValueMaterialAccident": "Accident matériel",
+  "claimsValueOther": "Autre",
+  "claimsValueMaterial": "Matériel",
+  "claimsValueLight": "Léger",
+  "claimsValueSerious": "Grave",
+  "claimsValueParked": "En stationnement",
+  "claimsValueLeavingParking": "Quittait un stationnement",
+  "claimsValueChangingLane": "Changeait de file",
+  "claimsValueOvertaking": "Doublait",
+  "claimsValueTurningRight": "Virait à droite",
+  "claimsValueTurningLeft": "Virait à gauche",
+  "claimsValueReversing": "Reculait",
+  "claimsValueFront": "Avant",
+  "claimsValueRear": "Arrière",
+  "claimsValueLeftSide": "Côté gauche",
+  "claimsValueRightSide": "Côté droit",
+  "claimsValueQuote": "Devis",
+  "claimsValueInvoice": "Facture",
+  "claimsValuePoliceReport": "PV de police",
+  "claimsValueExpertReport": "Rapport d'expertise",
+  "claimsValueSupporting": "Pièce",
+  "claimsValuePhoto": "Photo",
+  "claimsValueVideo": "Vidéo",
+  "claimsValueVoiceNote": "Note vocale",
+  "claimsValueAccidentReport": "Constat amiable",
+  "claimsEventDraftCreated": "Brouillon créé",
+  "claimsEventDeclared": "Déclaration complétée",
+  "claimsEventEvidence": "{count} preuves ajoutées",
+  "@claimsEventEvidence": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsEventSigned": "Double signature",
+  "claimsEventPdfLocked": "PDF verrouillé",
+  "claimsEventSent": "Transmis aux assureurs",
+  "claimsEventMoved": "Rendez-vous déplacé",
+  "claimsEventReport": "Rapport d’expertise joint",
+  "claimsEventDetail": "{status} : {detail}",
+  "@claimsEventDetail": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifNew": "Nouveau sinistre reçu : {id}",
+  "@claimsNotifNew": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifRequested": "{id} : pièce demandée ({document})",
+  "@claimsNotifRequested": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "document": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifUploaded": "{id} : pièce déposée ({name})",
+  "@claimsNotifUploaded": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifMoved": "{id} : rendez-vous d’expertise déplacé",
+  "@claimsNotifMoved": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifEvent": "{id} : {event}",
+  "@claimsNotifEvent": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "event": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifInReview": "Votre dossier {id} est en instruction.",
+  "@claimsNotifInReview": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifContract": "Votre contrat expire dans {days} jours.",
+  "@claimsNotifContract": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsValueVehicle": "Véhicule",
+  "claimsValueBodily": "Corporelle",
+  "claimsValueReopened": "Rouvert",
+  "claimsEventConfirmed": "Rendez-vous confirmé",
+  "claimsEventOtherSlot": "Autre créneau proposé",
+  "claimsNotifConfirmed": "{id} : rendez-vous d’expertise confirmé",
+  "@claimsNotifConfirmed": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsNotifOtherSlot": "{id} : autre créneau proposé pour l’expertise",
+  "@claimsNotifOtherSlot": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsQuestionOnDecision": "Une question sur la décision ? Écrire à l’agent",
+  "claimsReportPending": "L’expert envoie son rapport à l’assureur après le rendez-vous. Il apparaîtra ici.",
+  "claimsReportReceived": "Rapport de l’expert, joint par l’agent",
+  "claimsReopen": "Rouvrir le dossier",
+  "claimsReopenHelp": "En cas d’erreur, rouvrez le dossier : il revient en instruction et la décision précédente reste dans la chronologie.",
+  "claimsReopenAction": "Rouvrir",
+  "claimsKindHelp": "Corporelle : examen médical d’une personne blessée, un piéton par exemple. Aucun véhicule à présenter.",
+  "claimsExpertPhone": "Téléphone de l’expert",
+  "claimsExpertPlace": "Lieu du rendez-vous",
+  "claimsPlaceHintBody": "Cabinet médical, clinique…",
+  "claimsPlaceHintVehicle": "Garage, agence, domicile…",
+  "claimsSuggestedSlots": "Créneaux suggérés",
+  "claimsNoteOptional": "Message (facultatif)",
+  "claimsExpertRequired": "Indiquez le nom de l’expert.",
+  "claimsSlotConfirmed": "Confirmé",
+  "claimsSlotYourTurn": "À confirmer",
+  "claimsSlotWaitingAgent": "En attente de l’agent",
+  "claimsSlotWaitingDriver": "En attente du conducteur",
+  "claimsExpertiseBody": "Expertise médicale",
+  "claimsExpertiseVehicle": "Expertise du véhicule",
+  "claimsPlaceFromExpert": "Lieu communiqué par l’expert",
+  "claimsFromDriver": "Du conducteur",
+  "claimsFromAgent": "De l’agent",
+  "claimsToBring": "À apporter",
+  "claimsBringId": "Votre pièce d’identité",
+  "claimsBringCertificates": "Les certificats médicaux",
+  "claimsBringPrescriptions": "Les ordonnances et factures de soins",
+  "claimsBringVehicle": "Le véhicule, non réparé",
+  "claimsBringRegistration": "La carte grise",
+  "claimsBringLicence": "Le permis de conduire",
+  "claimsBringInsurance": "L’attestation d’assurance",
+  "claimsAccept": "Accepter",
+  "claimsProposeOther": "Proposer un autre créneau",
+  "claimsCannotCome": "Je ne peux plus venir",
+  "claimsOtherDateTime": "Autre date et heure",
+  "claimsSendProposal": "Envoyer la proposition",
+  "claimsStepReceived": "Reçu",
+  "claimsStepReview": "Étude",
+  "claimsStepExpertise": "Expertise",
+  "claimsStepDecision": "Décision",
+  "claimsYourTodo": "À faire",
+  "claimsRemainingDays": "{days, plural, =1{Encore environ 1 jour} other{Encore environ {days} jours}}",
+  "@claimsRemainingDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "claimsEstimateNote": "Estimation, pas un engagement.",
+  "claimsTakingLonger": "Votre dossier prend plus de temps que d’habitude. Vous pouvez écrire à votre agent.",
+  "claimsCircumstancesA": "Circonstances de A",
+  "claimsCircumstancesB": "Circonstances de B",
+  "claimsProposalFaultB": "{box} : manœuvre à risque de B.",
+  "@claimsProposalFaultB": {
+    "placeholders": {
+      "box": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsProposalBoth": "A : {a}, B : {b}. Manœuvres à risque des deux côtés : partage.",
+  "@claimsProposalBoth": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsProposalParkedB": "B était en stationnement.",
+  "claimsNoCompany": "Compagnie non renseignée",
+  "claimsEventSealed": "Constat scellé (SHA-256 {hash})",
+  "@claimsEventSealed": {
+    "placeholders": {
+      "hash": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsEventSealedLocal": "Constat scellé sur le téléphone (SHA-256 {hash})",
+  "@claimsEventSealedLocal": {
+    "placeholders": {
+      "hash": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsEventWaitingSync": "En attente de connexion pour l’envoi",
+  "claimsSummaryTitle": "Résumé du dossier",
+  "claimsPriorityScore": "Priorité {score}",
+  "@claimsPriorityScore": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "claimsSearchMine": "Rechercher dans mes dossiers",
+  "claimsBySeverity": "Par gravité",
+  "claimsByType": "Par type d’accident",
+  "claimsAnswersBySource": "Réponses par source",
+  "appTitle": "Amio",
+  "brand": "Amio",
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "delete": "Supprimer",
+  "edit": "Modifier",
+  "retry": "Réessayer",
+  "later": "Plus tard",
+  "or": "ou",
+  "validate": "Valider",
+  "notProvided": "Non renseigné",
+  "requiredField": "Champ obligatoire.",
+  "invalidEmail": "Adresse e-mail invalide.",
+  "invalidPhone": "Numéro de téléphone invalide.",
+  "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères.",
+  "codeFormat": "Le code contient 6 chiffres.",
+  "passwordsDontMatch": "Les mots de passe ne correspondent pas.",
+  "roleDriver": "Conducteur",
+  "roleAgent": "Agent d'assurance",
+  "roleAdmin": "Administrateur",
+  "heroTitleLine1": "Le constat,",
+  "heroTitleLine2": "sans papier.",
+  "heroSubtitle": "Déclarez, signez et suivez votre sinistre depuis votre téléphone.",
+  "loginTitle": "Connexion",
+  "identifierLabel": "E-mail ou téléphone",
+  "passwordLabel": "Mot de passe",
+  "forgotPasswordLink": "Mot de passe oublié ?",
+  "signIn": "Se connecter",
+  "biometricButton": "Empreinte ou Face ID",
+  "noAccount": "Pas encore de compte ?",
+  "createAccountLink": "Créer un compte",
+  "showPassword": "Afficher le mot de passe",
+  "hidePassword": "Masquer le mot de passe",
+  "biometricLoginReason": "Connectez-vous à Amio",
+  "biometricEnableReason": "Confirmez pour activer la connexion biométrique",
+  "languageSwitcher": "Langue de l'application",
+  "registerTitle": "Créer un compte",
+  "firstNameLabel": "Prénom",
+  "lastNameLabel": "Nom",
+  "emailLabel": "E-mail",
+  "phoneLabel": "Téléphone",
+  "confirmPasswordLabel": "Confirmer le mot de passe",
+  "createMyAccount": "Créer mon compte",
+  "otpTitle": "Vérifier mon téléphone",
+  "otpInstructions": "Saisissez le code à 6 chiffres envoyé sur WhatsApp au {phone}.",
+  "@otpInstructions": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "otpCodeLabel": "Code de vérification",
+  "resendCode": "Renvoyer le code",
+  "resendCodeIn": "Renvoyer le code ({seconds} s)",
+  "@resendCodeIn": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "forgotTitle": "Mot de passe oublié",
+  "forgotIntro": "Saisissez votre adresse e-mail pour recevoir un code de réinitialisation.",
+  "forgotCodeSent": "Si un compte existe pour {email}, un code valable 15 minutes vient de lui être envoyé.",
+  "@forgotCodeSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "codeFromEmailLabel": "Code reçu par e-mail",
+  "newPasswordLabel": "Nouveau mot de passe",
+  "receiveCode": "Recevoir un code",
+  "changePassword": "Changer le mot de passe",
+  "passwordChanged": "Mot de passe modifié. Vous pouvez vous connecter.",
+  "profileTitle": "Mon profil",
+  "profileSubtitle": "Identité, permis et préférences",
+  "profileCompletion": "Profil complété à {percent} %",
+  "@profileCompletion": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "profileCompleteHint": "Complétez votre permis : il servira à remplir le constat.",
+  "profileComplete": "Profil complet, prêt pour un constat.",
+  "sectionIdentity": "Identité",
+  "sectionLicense": "Permis de conduire",
+  "sectionSecurity": "Sécurité",
+  "sectionPreferences": "Préférences",
+  "fullNameLabel": "Nom complet",
+  "emailNotEditable": "L'e-mail ne peut pas être modifié.",
+  "phoneVerified": "Numéro vérifié",
+  "phoneNotVerified": "Numéro non vérifié",
+  "verify": "Vérifier",
+  "licenseNumberLabel": "N° de permis",
+  "licenseCategoryLabel": "Catégorie",
+  "licenseIssuedLabel": "Date de délivrance",
+  "licenseEmpty": "Aucun permis enregistré. Il sert à remplir votre partie du constat.",
+  "addLicense": "Ajouter mon permis",
+  "licenseIssuedOn": "Délivré le {date}",
+  "@licenseIssuedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "licensePhotoAdd": "Ajouter la photo du permis",
+  "replace": "Remplacer",
+  "biometricTitle": "Connexion par empreinte",
+  "biometricSubtitle": "Empreinte ou reconnaissance faciale, 30 jours sur ce téléphone",
+  "biometricEnabled": "Connexion biométrique activée",
+  "languageLabel": "Langue",
+  "logout": "Se déconnecter",
+  "profileSaved": "Profil enregistré",
+  "editIdentityTitle": "Modifier l'identité",
+  "editLicenseTitle": "Modifier le permis",
+  "changeProfilePhoto": "Changer la photo de profil",
+  "phoneChangeNotice": "Un nouveau numéro devra être vérifié par un code WhatsApp.",
+  "takePhoto": "Prendre une photo",
+  "chooseFromGallery": "Choisir dans la galerie",
+  "deletePhoto": "Supprimer la photo",
+  "photoSaved": "Photo enregistrée",
+  "accountsTitle": "Gestion des comptes",
+  "accountsSubtitle": "Rôles, agents et suspensions",
+  "createAgentTooltip": "Créer un agent",
+  "searchHint": "Nom, e-mail ou téléphone",
+  "noAccounts": "Aucun compte trouvé.",
+  "roleLabel": "Rôle",
+  "companyLabel": "Compagnie",
+  "createAgentTitle": "Créer un agent",
+  "tempPasswordLabel": "Mot de passe provisoire",
+  "createAccountButton": "Créer le compte",
+  "companiesTitle": "Compagnies d'assurance",
+  "companiesSubtitle": "Compagnies et agences",
+  "addCompany": "Ajouter une compagnie",
+  "noCompanies": "Aucune compagnie enregistrée.",
+  "agencyCount": "{count, plural, =0{Aucune agence} =1{1 agence} other{{count} agences}}",
+  "@agencyCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "addAgency": "Ajouter une agence",
+  "rename": "Renommer",
+  "newCompany": "Nouvelle compagnie",
+  "renameCompany": "Renommer la compagnie",
+  "companyNameLabel": "Nom de la compagnie",
+  "newAgency": "Nouvelle agence",
+  "editAgency": "Modifier l'agence",
+  "agencyNameLabel": "Nom de l'agence",
+  "cityLabel": "Ville",
+  "deleteCompanyTitle": "Supprimer {name} ?",
+  "@deleteCompanyTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteCompanyBody": "Ses agences seront aussi supprimées.",
+  "deleteAgencyTooltip": "Supprimer l'agence",
+  "adminTitle": "Administration",
+  "adminSubtitle": "Vue globale de la plateforme",
+  "demoData": "Données de démonstration",
+  "statAccidents": "Accidents",
+  "statOpen": "Ouverts",
+  "statClosed": "Clôturés",
+  "statAvgDelay": "Délai moyen",
+  "heatmapTitle": "Carte des zones à forte accidentalité",
+  "severityTitle": "Répartition par gravité",
+  "severityMaterial": "{percent} % matériel",
+  "@severityMaterial": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "navHome": "Accueil",
+  "navVehicles": "Véhicules",
+  "navClaims": "Dossiers",
+  "navMessages": "Messages",
+  "navProfile": "Profil",
+  "navDashboard": "Tableau",
+  "navCases": "Sinistres",
+  "navAccounts": "Comptes",
+  "navCompanies": "Compagnies",
+  "errorGeneric": "Une erreur est survenue. Réessayez.",
+  "errorNetwork": "Connexion au serveur impossible. Vérifiez votre réseau.",
+  "errorInvalidCredentials": "Identifiant ou mot de passe incorrect.",
+  "errorAccountLocked": "Compte bloqué pendant 15 minutes après 5 échecs. Réessayez plus tard.",
+  "errorAccountSuspended": "Ce compte est suspendu.",
+  "errorAlreadyExists": "Cette valeur est déjà utilisée.",
+  "errorInvalidCode": "Code incorrect ou expiré.",
+  "errorCodeCooldown": "Attendez une minute avant de redemander un code.",
+  "errorSessionExpired": "Session expirée. Reconnectez-vous.",
+  "errorBiometricInvalid": "Connexion biométrique expirée. Connectez-vous avec votre mot de passe.",
+  "errorBiometricUnavailable": "Empreinte ou reconnaissance faciale indisponible. Vérifiez les réglages de sécurité du téléphone.",
+  "errorFileTooLarge": "Image trop lourde : 5 Mo maximum.",
+  "errorUnsupportedImage": "Format accepté : JPEG, PNG ou WebP.",
+  "errorCompanyInUse": "Cette compagnie a encore des agents rattachés.",
+  "errorSelfChange": "Impossible de modifier votre propre rôle ou statut.",
+  "errorInvalidData": "Certaines données sont invalides.",
+  "appearanceLabel": "Apparence",
+  "themeSystem": "Comme le téléphone",
+  "themeLight": "Clair",
+  "themeDark": "Sombre",
+  "navDeclarations": "Constats",
+  "securityDevicesTitle": "Appareils connectés",
+  "securityDevicesSubtitle": "Où votre compte est ouvert",
+  "thisDevice": "Cet appareil",
+  "lastActive": "Actif le {when}",
+  "@lastActive": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "signOutDevice": "Déconnecter",
+  "signOutDeviceConfirm": "Déconnecter {name} ?",
+  "@signOutDeviceConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "signOutDeviceBody": "Cet appareil devra se reconnecter avec le mot de passe.",
+  "signOutOthers": "Déconnecter les autres appareils",
+  "signedOutOthers": "{count, plural, =0{Aucun autre appareil connecté} =1{1 appareil déconnecté} other{{count} appareils déconnectés}}",
+  "@signedOutOthers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unknownDevice": "Appareil inconnu",
+  "securityAlertNote": "Une connexion depuis un nouvel appareil vous est signalée sur WhatsApp et par e-mail.",
+  "loginHistoryTitle": "Historique des connexions",
+  "noHistory": "Aucune connexion enregistrée.",
+  "loginSuccess": "Connexion réussie",
+  "loginMethodPassword": "mot de passe",
+  "loginMethodBiometric": "empreinte",
+  "loginMethodRegister": "création du compte",
+  "loginFailedWrongPassword": "Mot de passe incorrect",
+  "loginFailedLocked": "Tentative sur compte bloqué",
+  "loginFailedSuspended": "Tentative sur compte suspendu",
+  "identityTitle": "Vérification d'identité",
+  "identityStatusUnverified": "Identité non vérifiée",
+  "identityStatusPending": "Vérification en cours",
+  "identityStatusVerified": "Identité vérifiée",
+  "identityStatusRejected": "Vérification refusée",
+  "identityIntro": "Choisissez une pièce, photographiez-la, puis vérifiez votre visage. Notre IA compare votre visage à la photo de la pièce, sur nos serveurs, sans aucun service extérieur.",
+  "identityPendingNote": "L'IA n'a pas pu conclure : un administrateur compare vos photos. Vous serez prévenu sur WhatsApp et par e-mail.",
+  "identityVerifiedNote": "Vous pouvez signer vos constats.",
+  "identityRejectedReason": "Motif : {reason}",
+  "@identityRejectedReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "cinNumberLabel": "N° de CIN",
+  "cinInvalid": "Le numéro de CIN contient 8 chiffres.",
+  "cinFront": "Recto de la CIN",
+  "cinBack": "Verso de la CIN",
+  "addPhoto": "Ajouter la photo",
+  "identityPhotosRequired": "Ajoutez les photos de la pièce.",
+  "submitIdentity": "Envoyer pour vérification",
+  "identitySent": "Demande envoyée. Vous serez prévenu sur WhatsApp.",
+  "navIdentities": "Identités",
+  "reviewTitle": "Vérifications d'identité",
+  "reviewSubtitle": "Demandes en attente, les plus anciennes en premier",
+  "noPendingReviews": "Aucune demande en attente.",
+  "submittedOn": "Envoyée le {date}",
+  "@submittedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "approve": "Valider",
+  "reject": "Refuser",
+  "rejectTitle": "Motif du refus",
+  "rejectReasonBlurry": "Photo floue",
+  "rejectReasonUnreadable": "Document illisible",
+  "rejectReasonNameMismatch": "Nom différent du compte",
+  "rejectReasonNotCin": "Pièce non valable",
+  "otherReason": "Autre motif",
+  "identityApproved": "Identité validée, le titulaire est prévenu",
+  "identityRejected": "Demande refusée, le titulaire est prévenu",
+  "errorIdentityLocked": "Votre identité est en cours de vérification ou déjà vérifiée.",
+  "errorCinInUse": "Ce numéro de pièce est déjà utilisé.",
+  "errorIdentityNotVerified": "Votre identité doit être vérifiée avant cette action.",
+  "errorIdentityNotPending": "Cette demande n'est plus en attente.",
+  "consentLabel": "J'accepte que mes données soient traitées pour la gestion de mes constats, conformément à la loi n° 2004-63.",
+  "consentRequired": "Votre accord est nécessaire pour créer un compte.",
+  "sectionPrivacy": "Données personnelles",
+  "exportData": "Télécharger mes données",
+  "exportDataSubtitle": "PDF de tout ce qu'Amio garde sur vous",
+  "deleteAccount": "Supprimer mon compte",
+  "deleteAccountSubtitle": "Définitif. Vos constats restent, sans votre nom.",
+  "deleteAccountTitle": "Supprimer votre compte ?",
+  "deleteAccountBody": "Votre nom, vos coordonnées, votre permis, votre CIN et vos photos seront effacés. Les accidents et sinistres déjà déclarés restent, anonymes, comme l'exige l'assurance. Cette action est définitive.",
+  "deleteAccountConfirm": "Supprimer définitivement",
+  "accountDeleted": "Votre compte a été supprimé.",
+  "errorAdminCannotDelete": "Un administrateur ne peut pas supprimer son compte ici.",
+  "dashUsers": "Utilisateurs",
+  "dashActive": "{count} actifs",
+  "@dashActive": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashPendingIds": "À vérifier",
+  "dashVerifiedIds": "{count} identités vérifiées",
+  "@dashVerifiedIds": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashPhones": "Téléphones vérifiés",
+  "dashSignIns": "Connexions 7 j",
+  "dashFailed": "{count} échecs",
+  "@dashFailed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashSignupsTitle": "Inscriptions, 30 derniers jours",
+  "dashRolesTitle": "Comptes par rôle",
+  "dashIdentityTitle": "Vérification d'identité des conducteurs",
+  "dashNetwork": "{companies} compagnies · {agencies} agences",
+  "@dashNetwork": {
+    "placeholders": {
+      "companies": {
+        "type": "int"
+      },
+      "agencies": {
+        "type": "int"
+      }
+    }
+  },
+  "dashAccidentsTitle": "Accidents et sinistres",
+  "dashAccidentsPending": "Indicateurs, répartition et carte des zones à risque : disponibles dès que les modules 3 et 5 envoient leurs données au serveur.",
+  "agencyLabel": "Agence",
+  "companiesOffline": "Hors ligne : liste enregistrée le {date}",
+  "@companiesOffline": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "pendingSyncTitle": "Modifications en attente",
+  "pendingSyncBody": "Enregistrées sur le téléphone. Elles seront envoyées dès le retour du réseau.",
+  "syncFailed": "Le serveur a refusé la modification : {reason}",
+  "syncNow": "Synchroniser",
+  "retrySync": "Réessayer",
+  "discardChanges": "Annuler les modifications",
+  "savedOffline": "Enregistré sur le téléphone. Envoi dès le retour du réseau.",
+  "syncing": "Synchronisation…",
+  "@syncFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "consoleDashboard": "Tableau de bord",
+  "consoleToHandle": "À traiter",
+  "consoleReview": "Examiner",
+  "consoleSeeAll": "Tout voir",
+  "consoleNothingToHandle": "Rien à traiter pour le moment.",
+  "refresh": "Actualiser",
+  "signedInAs": "Connecté",
+  "colUser": "Utilisateur",
+  "colStatus": "Statut",
+  "filterAll": "Tous",
+  "filterDrivers": "Conducteurs",
+  "filterAgents": "Agents",
+  "filterAdmins": "Administrateurs",
+  "accountsCount": "{count, plural, =0{Aucun compte} =1{1 compte} other{{count} comptes}}",
+  "@accountsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statusActive": "Actif",
+  "statusSuspended": "Suspendu",
+  "changeRole": "Changer le rôle",
+  "suspendAccount": "Suspendre",
+  "reactivateAccount": "Réactiver",
+  "selectRequest": "Sélectionnez une demande pour voir la pièce.",
+  "pendingCount": "{count, plural, =0{Aucune demande} =1{1 demande} other{{count} demandes}}",
+  "@pendingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "selectCompany": "Sélectionnez une compagnie pour gérer ses agences.",
+  "agenciesTitle": "Agences",
+  "noAgencies": "Aucune agence pour le moment.",
+  "heroPoint1": "Un constat complet en moins de 10 minutes, même hors ligne",
+  "heroPoint2": "Signature des deux conducteurs et PDF infalsifiable",
+  "heroPoint3": "Suivi du dossier en temps réel jusqu’à l’indemnisation",
+  "identityVerifiedAutoNote": "Vérifiée automatiquement par reconnaissance faciale. Vous pouvez signer vos constats.",
+  "documentTypeLabel": "Pièce d'identité",
+  "documentCin": "CIN",
+  "documentLicense": "Permis",
+  "documentPassport": "Passeport",
+  "passportNumberLabel": "N° du passeport",
+  "licenseNumberInvalid": "Numéro de permis invalide (ex. 12/345678).",
+  "passportNumberInvalid": "Numéro de passeport invalide (ex. X1234567).",
+  "licenseFront": "Recto du permis",
+  "licenseBack": "Verso du permis",
+  "passportPage": "Page photo du passeport",
+  "faceCheckTitle": "Vérification du visage",
+  "faceCheckIntro": "Trois photos rapides : de face, puis la tête tournée de chaque côté. Une photo imprimée ou un écran ne passe pas.",
+  "faceCheckDone": "Visage vérifié",
+  "faceCheckStart": "Vérifier mon visage",
+  "faceCheckRedo": "Recommencer",
+  "faceCheckRequired": "Faites d'abord la vérification du visage.",
+  "livenessCenter": "Regardez la caméra, bien de face",
+  "livenessLeft": "Tournez la tête vers la gauche",
+  "livenessRight": "Tournez la tête vers la droite",
+  "livenessStepOf": "Photo {current} sur {total}",
+  "@livenessStepOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "livenessAnalyzing": "Analyse par l'IA…",
+  "livenessNoCamera": "Caméra indisponible. Autorisez l'accès à la caméra, puis réessayez.",
+  "livenessPrivacy": "La photo de face sert uniquement à cette vérification. Elle est effacée dès la décision.",
+  "livenessSuccess": "Visage vérifié. Vous pouvez envoyer la demande.",
+  "identityVerifiedByAi": "Identité vérifiée par l'IA",
+  "errorNoFaceOnDocument": "Aucun visage détecté sur la pièce. Reprenez la photo à plat, bien éclairée et sans reflet.",
+  "errorLivenessNoFace": "Visage introuvable. Placez votre visage dans l'ovale, bien éclairé.",
+  "errorLivenessManyFaces": "Une seule personne doit être devant la caméra.",
+  "errorLivenessNotCentered": "Regardez la caméra bien de face pour la première photo.",
+  "errorLivenessNoTurn": "Tournez davantage la tête quand la consigne le demande.",
+  "errorLivenessDifferentFaces": "Les photos ne montrent pas la même personne.",
+  "errorLivenessExpired": "Le défi a expiré. Recommencez la vérification du visage.",
+  "errorFaceEngine": "L'analyse du visage est indisponible. Réessayez dans un instant.",
+  "aiMatch": "Ressemblance IA : {percent} %",
+  "@aiMatch": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "aiNoConclusion": "IA : pas de conclusion",
+  "livenessPassed": "Visage vivant vérifié",
+  "selfieLabel": "Photo du visage",
+  "documentNumberLabel": "N° de la pièce",
+  "rejectReasonFaceMismatch": "Le visage ne correspond pas à la pièce",
+  "dashVerifiedIdsAi": "{count} vérifiées, dont {ai} par l'IA",
+  "@dashVerifiedIdsAi": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "ai": {
+        "type": "int"
+      }
+    }
+  },
+  "readingDocument": "Lecture de la pièce par l'IA…",
+  "readOnCard": "Lu sur la pièce par l'IA",
+  "readNumber": "Numéro",
+  "readName": "Nom",
+  "readParents": "Filiation",
+  "readBirth": "Naissance",
+  "readExpiry": "Valable jusqu'au",
+  "readConfirm": "Vérifiez ces informations. Le numéro saisi doit être celui de la pièce.",
+  "readNothing": "L'IA n'a pas pu lire la pièce. Saisissez le numéro : un administrateur vérifiera.",
+  "useNumberRead": "Utiliser ce numéro",
+  "useLicensePhoto": "Utiliser la photo du permis de mon profil",
+  "errorBackHasFace": "Cette photo montre un recto. Photographiez le verso de la même pièce.",
+  "errorLicensePhotoMissing": "Aucune photo de permis dans votre profil.",
+  "checksTitle": "Contrôles de l'IA",
+  "checkLiveness": "Visage vivant",
+  "checkFace": "Visage identique à la photo de la pièce",
+  "checkNumber": "Numéro saisi = numéro lu ({number})",
+  "@checkNumber": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "checkNumberUnread": "Numéro illisible sur la pièce",
+  "checkName": "Nom du compte sur la pièce",
+  "checkExpiry": "Pièce en cours de validité",
+  "scanLicense": "Scanner mon permis",
+  "scanLicenseHint": "Prenez votre permis en photo : l'IA remplit le numéro, les catégories et la date.",
+  "licenseFilledByAi": "Rempli par l'IA à partir de la photo. Vérifiez avant d'enregistrer.",
+  "licenseNotRead": "Photo enregistrée, mais l'IA n'a pas pu lire le permis. Complétez les champs.",
+  "errorBackNotRecognized": "Ce n'est pas le verso de la pièce. Sur une CIN, le code-barres doit être net et entier sur la photo.",
+  "checkBack": "Verso reconnu",
+  "rejectSevere": "Refus définitif : bloquer les nouvelles demandes",
+  "rejectSevereHint": "Pour une fraude probable : visage différent, fausse pièce.",
+  "identityBlockedNote": "La vérification de votre identité est bloquée. Contactez le support.",
+  "identityRetryOn": "Nouvelle demande possible le {date}.",
+  "@identityRetryOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "identityAttemptsLeft": "Essais restants : {count}.",
+  "@identityAttemptsLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "errorIdentityBlocked": "La vérification de votre identité est bloquée. Contactez le support.",
+  "errorIdentityRetryLater": "Attendez 24 h après un refus avant une nouvelle demande.",
+  "unblockIdentity": "Débloquer la vérification",
+  "identityUnblocked": "Vérification débloquée",
+  "identityBlockedChip": "Vérification bloquée",
+  "attemptsTitle": "Demandes de ce compte",
+  "refusalsCount": "Refus : {count}",
+  "@refusalsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "outcomeAuto": "Validée par l'IA",
+  "outcomeVerified": "Validée",
+  "outcomeRejected": "Refusée",
+  "outcomePending": "En attente",
+  "biometricConsentLabel": "J'accepte que mon visage soit analysé pour vérifier mon identité. Analyse faite sur les serveurs d'Amio, photo effacée dès la décision (loi n° 2004-63).",
+  "errorAiQuota": "Trop d'analyses en peu de temps. Réessayez dans un moment.",
+  "livenessHintNoFace": "Placez votre visage dans l'ovale",
+  "livenessHintLookStraight": "Regardez la caméra bien en face",
+  "livenessHintTurnMore": "Tournez davantage la tête",
+  "dashAiTitle": "Vérification par l'IA",
+  "dashAiFooter": "Sur la période affichée. Analyse sur nos serveurs, sans service extérieur.",
+  "dashAiRequests": "demandes",
+  "dashAiAutoRate": "validées par l'IA seule",
+  "dashAiAverageMatch": "ressemblance moyenne",
+  "dashAiBlocked": "comptes bloqués",
+  "checkBirthDate": "Même date de naissance que le permis",
+  "licenseBirthMismatch": "Attention : la date de naissance du permis ne correspond pas à votre pièce d'identité.",
+  "licenseNameMismatch": "Attention : ce permis n'est pas à votre nom. Ajoutez votre propre permis.",
+  "licenseCinMismatch": "Attention : le numéro de CIN du permis ne correspond pas à votre pièce d'identité.",
+  "errorWrongDocument": "La photo ne montre pas la pièce choisie. Changez de pièce ou de photo.",
+  "errorNotALicense": "Cette photo n'est pas un permis de conduire.",
+  "registerIntro": "Un e-mail et un mot de passe. Le reste se fait juste après, en quelques étapes.",
+  "registerStepYou": "Vous",
+  "registerStepContact": "Vos coordonnées",
+  "registerStepSecurity": "Sécurité",
+  "registerPhoneHint": "Un code de vérification vous sera envoyé sur WhatsApp.",
+  "passwordWeak": "Faible",
+  "passwordFair": "Moyen",
+  "passwordGood": "Bon",
+  "passwordStrong": "Excellent",
+  "passwordRuleLength": "8 caractères",
+  "passwordRuleUpper": "Une majuscule",
+  "passwordRuleDigit": "Un chiffre",
+  "passwordRuleSymbol": "Un symbole",
+  "identityStepDocument": "Pièce",
+  "identityStepReading": "Lecture",
+  "identityStepFace": "Visage",
+  "identityStepSend": "Envoi",
+  "profileIdentityVerified": "Identité vérifiée",
+  "profileIdentityPending": "Identité en cours",
+  "profileIdentityTodo": "Identité à vérifier",
+  "licenseStatusVerified": "Permis vérifié",
+  "licenseStatusToReview": "Permis en cours de vérification",
+  "licenseStatusRejected": "Permis refusé",
+  "licenseToReviewNote": "Une information du permis ne correspond pas à votre compte : un administrateur le vérifie.",
+  "licenseRejectedNote": "Votre permis a été refusé. Motif : {reason}. Ajoutez votre propre permis.",
+  "@licenseRejectedNote": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLicenseNotYours": "Ce permis ne semble pas être le vôtre : le nom, la date de naissance ou le numéro de CIN ne correspondent pas à votre compte. Il n'a pas été enregistré.",
+  "accountFileTitle": "Dossier du compte",
+  "openAccountFile": "Voir le dossier",
+  "sectionAccount": "Compte",
+  "licenseReviewTitle": "Permis à vérifier",
+  "licenseReviewSubtitle": "Un contrôle de l'IA a échoué, ou la photo était illisible",
+  "noLicenseReviews": "Aucun permis à vérifier.",
+  "licensesToReviewCount": "{count, plural, =1{1 permis à vérifier} other{{count} permis à vérifier}}",
+  "@licensesToReviewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "approveLicense": "Valider le permis",
+  "rejectLicense": "Refuser le permis",
+  "deleteLicense": "Supprimer le permis",
+  "deleteLicenseBody": "La photo et les informations du permis de {name} seront effacées.",
+  "@deleteLicenseBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "licenseApproved": "Permis validé",
+  "licenseRejected": "Permis refusé, le conducteur voit le motif",
+  "licenseDeleted": "Permis supprimé",
+  "licenseUpdated": "Permis modifié",
+  "noLicense": "Aucun permis enregistré.",
+  "noIdentityDocuments": "Aucune pièce enregistrée.",
+  "aiChecksTitle": "Contrôles de l'IA",
+  "checkLicenseName": "Nom du titulaire = nom du compte",
+  "checkLicenseBirth": "Date de naissance = pièce d'identité",
+  "checkLicenseCin": "N° de CIN = pièce d'identité",
+  "checkLicenseNumber": "Numéro saisi = numéro lu sur la photo",
+  "checkNotCompared": "non comparable",
+  "licenseRejectReasonNotOwner": "Permis d'une autre personne",
+  "licenseRejectReasonExpired": "Permis expiré",
+  "revokeIdentity": "Annuler la vérification",
+  "revokeIdentityTitle": "Annuler la vérification d'identité ?",
+  "revokeIdentityBody": "Les photos de la pièce seront effacées. Le conducteur voit le motif et peut refaire une demande tout de suite.",
+  "identityRevoked": "Vérification annulée",
+  "reasonLabel": "Motif",
+  "onbSkip": "Passer",
+  "onbLater": "Plus tard",
+  "onbContinue": "Continuer",
+  "onbBack": "Étape précédente",
+  "onbProgress": "Étape {current} sur {total}",
+  "@onbProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "onbWelcomeEyebrow": "Compte créé",
+  "onbWelcomeTitle": "Bienvenue,\n{name}",
+  "@onbWelcomeTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "onbWelcomeBody": "Deux minutes pour préparer votre compte, et vous serez prêt le jour où vous en aurez besoin.",
+  "onbWelcomeStart": "Préparer mon compte",
+  "onbWelcomeSkip": "Je le ferai plus tard",
+  "onbLicenseTitle": "Ajoutez votre permis",
+  "onbLicenseBody": "Une photo suffit : l'IA lit le numéro, les catégories et la date. Il servira à remplir vos constats.",
+  "onbLicenseScan": "Photographier mon permis",
+  "onbLicenseRescan": "Reprendre la photo",
+  "onbLicenseReading": "Lecture du permis…",
+  "onbLicenseRead": "Lu par l'IA",
+  "onbLicenseUnread": "La carte n'a pas pu être lue. Vous compléterez les informations depuis votre profil.",
+  "onbLicenseTip": "À plat, bien éclairé, sans reflet.",
+  "onbIdentityTitle": "Vérifiez votre identité",
+  "onbIdentityBody": "Pour signer vos constats en toute confiance. Comptez deux minutes.",
+  "onbIdentityStep1": "Une pièce : CIN, permis ou passeport",
+  "onbIdentityStep2": "Votre visage, en tournant la tête",
+  "onbIdentityStep3": "L'IA compare, en quelques secondes",
+  "onbIdentityStart": "Vérifier maintenant",
+  "onbIdentityLicenseHint": "Votre permis peut servir de pièce : inutile de le reprendre en photo.",
+  "onbIdentityPrivacy": "Vos photos sont analysées sur nos serveurs, sans service extérieur.",
+  "onbBiometricTitle": "Connexion en un geste",
+  "onbBiometricBody": "Ouvrez l'application avec votre empreinte ou votre visage, sans retaper votre mot de passe.",
+  "onbBiometricEnable": "Activer",
+  "onbDoneTitle": "Tout est prêt,\n{name}",
+  "@onbDoneTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "onbDoneBody": "Vous pouvez déclarer un accident à tout moment, même sans réseau.",
+  "onbDoneLater": "Le reste se termine depuis votre profil, quand vous voulez.",
+  "onbDoneStart": "Accéder à l'application",
+  "onbItemPhone": "Téléphone",
+  "onbItemLicense": "Permis de conduire",
+  "onbItemIdentity": "Identité",
+  "onbItemBiometric": "Connexion biométrique",
+  "onbStateDone": "Fait",
+  "onbStatePending": "En vérification",
+  "onbStateTodo": "À faire",
+  "registerStepAccount": "Votre compte",
+  "onbWelcomeNewTitle": "Bienvenue sur\nAmio",
+  "onbProfileTitle": "Faisons connaissance",
+  "onbProfileBody": "Votre nom figure sur vos constats. Votre numéro sert à vous connecter et à suivre vos dossiers.",
+  "onbPhoneTitle": "Confirmez votre numéro",
+  "onbCodeSent": "Nouveau code envoyé.",
+  "onbReadingTitle": "Lu sur la pièce",
+  "correctReading": "Corriger",
+  "correctReadingTitle": "Corriger la lecture de la pièce",
+  "correctReadingHint": "Corrigez ce que l'IA a mal lu, en recopiant la pièce. Dates au format AAAA-MM-JJ.",
+  "readingCorrected": "Lecture corrigée",
+  "readLastName": "Nom",
+  "readFirstName": "Prénom",
+  "readBirthDate": "Date de naissance",
+  "readBirthPlace": "Lieu de naissance",
+  "claimsDecisionHelpGuide": "Aide à la décision : priorité, estimation, risque et pièces manquantes de ce dossier. Touchez l’icône pour l’ouvrir.",
+  "claimsTimelineEarlier": "{count, plural, =1{1 étape précédente} other{{count} étapes précédentes}}",
+  "@claimsTimelineEarlier": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "claimsAlertOpen": "Voir",
+  "claimsTimelineCollapse": "Afficher moins",
+  "dashClaimsTotal": "Sinistres",
+  "dashClaimsOpen": "En cours",
+  "dashClaimsClosed": "Clôturés",
+  "dashAvgClose": "Délai moyen de clôture",
+  "dashDays": "{days} j",
+  "@dashDays": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "dashIndemnities": "Indemnisations versées : {amount} TND",
+  "@dashIndemnities": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "dashByStatus": "Par statut",
+  "dashBySeverity": "Par gravité",
+  "dashByCompany": "Par compagnie",
+  "dashByMonth": "Sinistres des 6 derniers mois",
+  "dashHotspots": "Lieux des accidents déclarés ({count})",
+  "@dashHotspots": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashNoPoints": "Aucune déclaration localisée pour l’instant.",
+  "dashNoCompany": "Sans compagnie",
+  "vehAddVehicle": "Ajouter un véhicule",
+  "vehEditVehicle": "Modifier le véhicule",
+  "vehEdit": "Modifier",
+  "vehArchive": "Archiver",
+  "vehUnarchive": "Désarchiver",
+  "vehDelete": "Supprimer",
+  "vehCancel": "Annuler",
+  "vehInsurance": "Assurance",
+  "vehInsuranceContract": "Contrat d'assurance",
+  "vehTechnicalInspection": "Visite technique",
+  "vehMileage": "Kilométrage",
+  "vehMileageValue": "{thousands} 000 km",
+  "@vehMileageValue": {
+    "placeholders": {
+      "thousands": {
+        "type": "int"
+      }
+    }
+  },
+  "vehType": "Type",
+  "vehFuel": "Carburant",
+  "vehYear": "Année",
+  "vehColor": "Couleur",
+  "vehPolicyNumber": "N° de police",
+  "vehExpiredBadge": "EXPIRÉ",
+  "vehStatusOk": "OK",
+  "vehDaysShort": "{days}j",
+  "@vehDaysShort": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehDaysOverdue": "{days}j\ndépassé",
+  "@vehDaysOverdue": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehDateHint": "JJ/MM/AAAA",
+  "vehTypeCar": "Voiture",
+  "vehTypeMoto": "Moto",
+  "vehTypeTruck": "Camion",
+  "vehTypeVan": "Camionnette",
+  "vehOther": "Autre",
+  "vehFuelPetrol": "Essence",
+  "vehFuelDiesel": "Diesel",
+  "vehFuelElectric": "Électrique",
+  "vehFuelHybrid": "Hybride",
+  "vehAlertsTitle": "Alertes d'échéance",
+  "vehAlertsEmptyTitle": "Aucune alerte active",
+  "vehAlertsEmptyBody": "Tous vos contrats et visites techniques\nsont à jour.",
+  "vehAlertsGroupExpired": "Expiré(s)",
+  "vehAlertsGroupExpiring": "Expire bientôt",
+  "vehAlertsSummaryExpired": "Expirés",
+  "vehAlertsSummaryNear": "Proches",
+  "vehAlertsSummaryTotal": "Total",
+  "vehAlertInsuranceExpired": "Assurance EXPIRÉE",
+  "vehAlertInsuranceExpiring": "Assurance expire dans {days} j.",
+  "@vehAlertInsuranceExpiring": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehAlertTechnicalExpired": "Visite technique EXPIRÉE",
+  "vehAlertTechnicalExpiring": "Visite technique dans {days} j.",
+  "@vehAlertTechnicalExpiring": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehListTitle": "Véhicules & contrats",
+  "vehListActiveCount": "{count} véhicule(s) actif(s)",
+  "@vehListActiveCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vehTabActive": "Actifs ({count})",
+  "@vehTabActive": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vehTabArchived": "Archivés ({count})",
+  "@vehTabArchived": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vehEmptyArchived": "Aucun véhicule archivé",
+  "vehEmptyActive": "Ajoutez votre premier véhicule",
+  "vehPolicyValue": "Police {policy}",
+  "@vehPolicyValue": {
+    "placeholders": {
+      "policy": {
+        "type": "String"
+      }
+    }
+  },
+  "vehAiAnalysis": "Analyse IA",
+  "vehDeleteTitle": "Supprimer ce véhicule ?",
+  "vehDeleteBody": "{name} ({plate}) sera définitivement supprimé.",
+  "@vehDeleteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "plate": {
+        "type": "String"
+      }
+    }
+  },
+  "vehSectionInfo": "Informations",
+  "vehRenew": "Renouveler",
+  "vehInsurer": "Assureur",
+  "vehExpiry": "Expiration",
+  "vehPremiumTitle": "Prime d’assurance estimée (IA)",
+  "vehPremiumValue": "{amount} TND / an",
+  "@vehPremiumValue": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "vehNextInspection": "Prochaine visite",
+  "vehClaimsHistory": "Historique sinistres",
+  "vehClaimsDeclared": "Sinistres déclarés",
+  "vehRenewTitle": "Renouveler le contrat d’assurance",
+  "vehExpiryDate": "Date d’expiration",
+  "vehRenewInvalid": "Date invalide (JJ/MM/AAAA) ou n° de police manquant.",
+  "vehRenewSuccess": "Contrat d’assurance renouvelé avec succès !",
+  "vehRiskTitle": "Analyse de risque IA",
+  "vehRiskSubtitle": "Calculé depuis vos données locales",
+  "vehRiskFactors": "Facteurs détectés",
+  "vehRecommendations": "Recommandations",
+  "vehPhotoTitle": "Photo du véhicule",
+  "vehAddPhoto": "Ajouter une photo",
+  "vehTakePhoto": "Prendre une photo",
+  "vehPickFromGallery": "Choisir depuis la galerie",
+  "vehRiskVeryOld": "Véhicule très ancien",
+  "vehRiskVeryOldDesc": "Plus de 20 ans — risque mécanique élevé.",
+  "vehRiskOld": "Véhicule ancien",
+  "vehRiskOldDesc": "{age} ans — entretien régulier recommandé.",
+  "@vehRiskOldDesc": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskMidAge": "Véhicule d'âge moyen",
+  "vehRiskMidAgeDesc": "{age} ans — vérifier la carte grise.",
+  "@vehRiskMidAgeDesc": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskInsExpiredDesc": "Expirée depuis {days} jour(s) — circuler est illégal.",
+  "@vehRiskInsExpiredDesc": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskInsCritical": "Assurance critique",
+  "vehRiskInsCriticalDesc": "Expire dans {days} jour(s) — renouvelez d'urgence.",
+  "@vehRiskInsCriticalDesc": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskInsSoon": "Assurance bientôt expirée",
+  "vehRiskExpiresIn": "Expire dans {days} jour(s).",
+  "@vehRiskExpiresIn": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskTechExpired": "Visite technique expirée",
+  "vehRiskExpiredSince": "Expirée depuis {days} jour(s).",
+  "@vehRiskExpiredSince": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskTechImminent": "Visite technique imminente",
+  "vehRiskInDays": "Dans {days} jour(s).",
+  "@vehRiskInDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskTechNear": "Visite technique proche",
+  "vehRiskTechUnknown": "Visite technique inconnue",
+  "vehRiskTechUnknownDesc": "Ajoutez la date pour un suivi précis.",
+  "vehRiskKmVeryHigh": "Kilométrage très élevé",
+  "vehRiskKmVeryHighDesc": "{thousands} 000 km — usure importante.",
+  "@vehRiskKmVeryHighDesc": {
+    "placeholders": {
+      "thousands": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskKmHigh": "Kilométrage élevé",
+  "vehRiskKmModerate": "Kilométrage modéré",
+  "vehRiskKmDesc": "{thousands} 000 km.",
+  "@vehRiskKmDesc": {
+    "placeholders": {
+      "thousands": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskClaimsHigh": "Historique sinistres élevé",
+  "vehRiskClaimsHighDesc": "{count} sinistre(s) enregistré(s).",
+  "@vehRiskClaimsHighDesc": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vehRiskClaimsMulti": "Sinistres multiples",
+  "vehRiskClaimsMultiDesc": "2 sinistres enregistrés.",
+  "vehRiskClaimsOne": "Sinistre précédent",
+  "vehRiskClaimsOneDesc": "1 sinistre enregistré.",
+  "vehRiskOldDiesel": "Diesel ancien",
+  "vehRiskOldDieselDesc": "Risque de particules et usure moteur accrue.",
+  "vehRecRenewNow": "Renouvelez votre assurance immédiatement.",
+  "vehRecSeeInsurer": "Prenez rendez-vous avec votre assureur dans les prochains jours.",
+  "vehRecTechNow": "Effectuez votre visite technique au plus tôt.",
+  "vehRecTechSchedule": "Programmez votre visite technique prochainement.",
+  "vehRecTechAddDate": "Ajoutez la date de votre prochaine visite technique.",
+  "vehRecFullCheck": "Faites une vérification complète chez un garagiste agréé.",
+  "vehRecBeltBrakes": "Vérifiez la courroie de distribution et les plaquettes de frein.",
+  "vehRecDefensive": "Envisagez une conduite défensive pour réduire les sinistres.",
+  "vehRecAddMileage": "Renseignez le kilométrage pour une analyse plus précise.",
+  "vehRecAllGood": "Votre véhicule est en règle. Continuez l'entretien régulier.",
+  "vehScanNothing": "Rien n’a pu être lu. Reprenez la photo à plat, bien éclairée.",
+  "vehScanRead": "Lu par l’IA : {fields}. Vérifiez avant d’enregistrer.",
+  "@vehScanRead": {
+    "placeholders": {
+      "fields": {
+        "type": "String"
+      }
+    }
+  },
+  "vehScanEstimated": "Fin de validité estimée à un an : vérifiez-la.",
+  "vehScanFailed": "Lecture impossible : {error}",
+  "@vehScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "vehScanBusy": "Lecture en cours… (jusqu’à 30 s)",
+  "vehScanRegistration": "Photographier la carte grise",
+  "vehScanInsurance": "Photographier l’attestation d’assurance",
+  "vehReadPlate": "immatriculation",
+  "vehReadBrand": "marque",
+  "vehReadModel": "modèle",
+  "vehReadYear": "année",
+  "vehReadPolicy": "n° de contrat",
+  "vehReadExpiry": "fin de validité",
+  "vehReadInsurer": "assureur",
+  "vehReadInsurerToPick": "assureur ({insurer}, à choisir dans la liste)",
+  "@vehReadInsurerToPick": {
+    "placeholders": {
+      "insurer": {
+        "type": "String"
+      }
+    }
+  },
+  "vehScanTitle": "Scanner vos documents avec l’IA",
+  "vehScanBody": "Une photo de la carte grise ou de l’attestation d’assurance : l’IA remplit le formulaire, vous vérifiez.",
+  "vehSectionIdentification": "Identification du véhicule",
+  "vehPlateRequired": "Immatriculation *",
+  "vehPlateHint": "Ex : 215 تونس 4521",
+  "vehBrandRequired": "Marque *",
+  "vehModelRequired": "Modèle *",
+  "vehYearRequired": "Année *",
+  "vehColorHint": "Blanc",
+  "vehKmUnit": "km",
+  "vehPolicyNumberRequired": "N° de police *",
+  "vehInsuranceExpiryRequired": "Date d'expiration assurance *",
+  "vehNextInspectionField": "Prochaine visite technique",
+  "vehSaveChanges": "Enregistrer les modifications",
+  "vehAddVehicleButton": "Ajouter le véhicule",
+  "vehFieldRequired": "Champ obligatoire.",
+  "vehYearInvalid": "Année invalide.",
+  "vehDateFormat": "Format JJ/MM/AAAA.",
+  "accStepContext": "Contexte",
+  "accStepContextHint": "Lieu, heure et conditions",
+  "accStepDescription": "Description",
+  "accStepDescriptionHint": "Type, gravité et témoins",
+  "accStepEvidence": "Preuves",
+  "accStepEvidenceHint": "Photos, vidéo et note vocale",
+  "accStepDriverBHint": "Identité et assurance",
+  "accStepCircumstances": "Circonstances",
+  "accStepCircumstancesHint": "Cases et observations",
+  "accStepSketch": "Croquis",
+  "accStepSketchHint": "Choc et schéma",
+  "accStepSignatures": "Signatures",
+  "accStepSignaturesHint": "Validation et transmission",
+  "accStepOf": "Étape {step} sur {total}",
+  "@accStepOf": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "accMinutesLeft": "~{minutes} min",
+  "@accMinutesLeft": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "accDriverA": "Conducteur A",
+  "accDriverB": "Conducteur B",
+  "accNewDeclaration": "Nouvelle déclaration",
+  "accDraft": "Brouillon",
+  "accFinishDriverBFirst": "Terminez d’abord la saisie du conducteur B.",
+  "accContinue": "Continuer",
+  "accContinueToReport": "Continuer vers le constat",
+  "accIAmDriverB": "Je suis le conducteur B",
+  "accFinishAndReturnPhone": "Terminer et rendre le téléphone",
+  "accSignAndSend": "Signer et transmettre",
+  "accIAmDriverA": "Je suis le conducteur A",
+  "accBack": "Retour",
+  "accDraftSaved": "Brouillon enregistré sur cet appareil",
+  "accThanks": "Merci !",
+  "accReturnPhoneText": "Rendez maintenant le téléphone au conducteur A. Les deux conducteurs signeront ensemble à la fin du constat.",
+  "accChooseVehicleFirst": "Choisissez votre véhicule à la première étape.",
+  "accSealingTitle": "Scellement cryptographique du constat…",
+  "accSealingHint": "Calcul du hash SHA-256 et transmission",
+  "accSealFailed": "Le constat n’a pas pu être scellé : {error}",
+  "@accSealFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "accVerifyIdentityTitle": "Vérifiez votre identité pour signer",
+  "accVerifyIdentityText": "Le constat engage les deux conducteurs : votre identité doit être vérifiée avant la signature. Votre brouillon reste enregistré.",
+  "accLater": "Plus tard",
+  "accVerifyIdentity": "Vérifier mon identité",
+  "accCheckPlace": "Vérifiez le lieu de l’accident.",
+  "accWitnessPhoneInvalid": "Ajoutez un numéro valide pour le témoin.",
+  "accMinPhotos": "Ajoutez au moins 2 photos avant de continuer.",
+  "accDriverBIncomplete": "Complétez le nom, l’immatriculation et l’assurance du conducteur B.",
+  "accCircumstanceRequired": "Sélectionnez au moins une circonstance pour le véhicule A ou B.",
+  "accSketchRequired": "Confirmez le croquis et une zone de choc.",
+  "accSignaturesRequired": "Les deux conducteurs doivent signer le constat.",
+  "accLocalDraftSaved": "Brouillon local • sauvegardé à {time}",
+  "@accLocalDraftSaved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "accHandoverTitle": "Passez le téléphone au conducteur B",
+  "accHandoverText": "Il remplit lui-même son identité, son permis, son véhicule et son assurance.",
+  "accHandoverHidden": "Vos informations restent masquées : le retour aux étapes précédentes est bloqué pendant sa saisie.",
+  "accHandoverScan": "Il peut photographier son permis : l’IA remplit les champs.",
+  "accHandoverReturn": "À la fin, il vous rend le téléphone.",
+  "accChooseVehicle": "Choisissez votre véhicule : son assureur reçoit le constat.",
+  "accInsuranceExpired": "Le contrat d’assurance de {vehicle} a expiré le {date}. Renouvelez-le dans Véhicules avant de déclarer.",
+  "@accInsuranceExpired": {
+    "placeholders": {
+      "vehicle": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "accYourVehicle": "VOTRE VÉHICULE",
+  "accAddVehicleHint": "Ajoutez votre véhicule et son assureur : c’est à lui que le constat est transmis.",
+  "accAddMyVehicle": "Ajouter mon véhicule",
+  "accContractExpiredOn": "Contrat expiré le {date}",
+  "@accContractExpiredOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "accInsurerMissing": "Assureur non renseigné",
+  "accInsuredUntil": "{insurer} · jusqu’au {date}",
+  "@accInsuredUntil": {
+    "placeholders": {
+      "insurer": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "accWhereWhen": "Où et quand ?",
+  "accWhereWhenHint": "Vérifiez les informations détectées automatiquement.",
+  "accPlaceRequired": "Indiquez le lieu de l’accident",
+  "accAccidentPlace": "Lieu de l’accident",
+  "accChooseOnMap": "Choisir sur la carte",
+  "accGpsLine": "GPS {coords} • précision ±{accuracy} m",
+  "@accGpsLine": {
+    "placeholders": {
+      "coords": {
+        "type": "String"
+      },
+      "accuracy": {
+        "type": "int"
+      }
+    }
+  },
+  "accDateTime": "Date et heure",
+  "accWeather": "Météo",
+  "accRoad": "Chaussée",
+  "accLight": "Luminosité",
+  "accPlaceConfirmed": "Lieu de l’accident confirmé et sauvegardé.",
+  "accPositionUnavailable": "Position indisponible. Réessayez dans un instant.",
+  "accPositionDetected": "Position détectée",
+  "accUseDetectedQuestion": "{place}\n\nVoulez-vous utiliser cette localisation ?",
+  "@accUseDetectedQuestion": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "accChooseAnother": "Choisir une autre",
+  "accUsePosition": "Utiliser cette position",
+  "accAutoLocationFailed": "Localisation automatique impossible.",
+  "accLocationDisabled": "Activez la localisation GPS de l’appareil.",
+  "accLocationDenied": "La permission de localisation a été refusée.",
+  "accLocationDeniedForever": "Autorisez la localisation dans les paramètres de l’application.",
+  "accAddressNotFound": "Adresse introuvable.",
+  "accValueSunny": "Ensoleillé",
+  "accValueRain": "Pluie",
+  "accValueFog": "Brouillard",
+  "accValueDry": "Sèche",
+  "accValueWet": "Mouillée",
+  "accValueSlippery": "Glissante",
+  "accValueDay": "Jour",
+  "accValueDusk": "Crépuscule",
+  "accValueNightLit": "Nuit éclairée",
+  "accValueNightDark": "Nuit sombre",
+  "accEvidenceOverview": "Vue d’ensemble",
+  "accEvidenceDamageA": "Dégâts véhicule A",
+  "accEvidenceDamageB": "Dégâts véhicule B",
+  "accEvidencePlates": "Plaques",
+  "accWhatHappened": "Que s’est-il passé ?",
+  "accWhatHappenedHint": "Ces informations permettent de prioriser votre dossier.",
+  "accAccidentType": "Type d'accident",
+  "accSeverity": "Gravité",
+  "accVehicles": "Véhicules",
+  "accInjured": "Blessés",
+  "accSecureArea": "Sécurisez la zone et appelez les secours",
+  "accSamu": "SAMU",
+  "accPolice": "Police",
+  "accCivilProtection": "Protection civile",
+  "accCalling": "Appel du {number}",
+  "@accCalling": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "accWitnessOptional": "Témoin (optionnel)",
+  "accWitnessName": "Nom du témoin",
+  "accPhone": "Téléphone",
+  "accGuidedPhotos": "Photos guidées",
+  "accPhotosProgress": "{count}/4 vues ajoutées • 2 minimum requises",
+  "@accPhotosProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "accPhotoSaved": "Photo enregistrée • touchez pour reprendre",
+  "accTapToOpenCamera": "Touchez pour ouvrir la caméra",
+  "accSceneVideo": "Vidéo de la scène",
+  "accOpeningCamera": "Ouverture de la caméra…",
+  "accVideoSaved": "Vidéo enregistrée • touchez pour la lire",
+  "accFilmScene": "Filmez la scène • 30 secondes maximum",
+  "accStopRecording": "Arrêter l’enregistrement",
+  "accVoiceNote": "Note vocale",
+  "accRecordingInProgress": "Enregistrement en cours… touchez pour arrêter",
+  "accVoiceNoteSaved": "Note enregistrée • touchez pour écouter",
+  "accDescribeByVoice": "Décrivez la scène avec votre voix",
+  "accVideoSaveFailed": "Impossible d’enregistrer la vidéo.",
+  "accMicPermission": "Autorisez le microphone pour enregistrer une note vocale.",
+  "accMicFailed": "Impossible de démarrer le microphone.",
+  "accVideoMissing": "La vidéo n’existe plus. Vous pouvez la reprendre.",
+  "accVoiceNoteMissing": "La note vocale n’existe plus. Vous pouvez la refaire.",
+  "accListen": "Écouter",
+  "accRedoRecording": "Refaire l’enregistrement",
+  "accDelete": "Supprimer",
+  "accPause": "Pause",
+  "accPlay": "Lire",
+  "accSummary": "RÉCAPITULATIF",
+  "accSummaryCounts": "{vehicles} véhicule(s) • {injured} blessé(s) • {photos} photo(s)",
+  "@accSummaryCounts": {
+    "placeholders": {
+      "vehicles": {
+        "type": "int"
+      },
+      "injured": {
+        "type": "int"
+      },
+      "photos": {
+        "type": "int"
+      }
+    }
+  },
+  "accReportCompleted": "Constat complété",
+  "accReviewHint": "Vérifiez toutes les informations avant la transmission.",
+  "accSectionAccident": "Accident",
+  "accPlace": "Lieu",
+  "accType": "Type",
+  "accConditions": "Conditions",
+  "accVehiclesInjured": "Véhicules / blessés",
+  "accVehiclesInjuredValue": "{vehicles} véhicule(s) • {injured} blessé(s)",
+  "@accVehiclesInjuredValue": {
+    "placeholders": {
+      "vehicles": {
+        "type": "int"
+      },
+      "injured": {
+        "type": "int"
+      }
+    }
+  },
+  "accWitness": "Témoin",
+  "accSectionDriverA": "Conducteur & Véhicule A",
+  "accName": "Nom",
+  "accLicense": "Permis",
+  "accVehicle": "Véhicule",
+  "accPlate": "Immatriculation",
+  "accInsurance": "Assurance",
+  "accPolicyNumber": "N° de police",
+  "accLicenseExpiry": "Validité du permis",
+  "accObservations": "Observations",
+  "accImpactZones": "Zones de choc",
+  "accPhotos": "Photos",
+  "accSketchMissing": "Croquis manquant",
+  "accPdfFailed": "Impossible de générer le PDF. Réessayez.",
+  "accPdfTitle": "Constat PDF",
+  "accPdfHint": "Le document reprend les informations officielles, photos, croquis et signatures.",
+  "accPreview": "Aperçu",
+  "accShare": "Partager",
+  "accNotProvided": "Non renseigné",
+  "accNoPhotos": "Aucune photo enregistrée.",
+  "accMyDeclarations": "Mes déclarations",
+  "accMyDeclarationsHint": "Brouillons et dossiers transmis",
+  "accDraftInProgress": "BROUILLON EN COURS",
+  "accResume": "Reprendre",
+  "accSentDeclarations": "DÉCLARATIONS TRANSMISES",
+  "accNoSentDeclarations": "Aucune déclaration transmise.",
+  "accDeleteDraftTitle": "Supprimer le brouillon ?",
+  "accDeleteDraftText": "Les informations non transmises seront perdues.",
+  "accCancel": "Annuler",
+  "accEmergencyNumbers": "Numéros d’urgence",
+  "accSearchAddress": "Rechercher une adresse",
+  "accSearch": "Rechercher",
+  "accMyPosition": "Ma position",
+  "accSelectedPlace": "LIEU SÉLECTIONNÉ",
+  "accConfirmPlace": "Confirmer ce lieu",
+  "accMinChars": "Saisissez au moins 3 caractères.",
+  "accPlaceFetchFailed": "Impossible de récupérer ce lieu.",
+  "cstNotProvided": "Non renseigné",
+  "cstClear": "Effacer",
+  "cstEdit": "Modifier",
+  "cstTapToDrawFullscreen": "Touchez pour dessiner en plein écran",
+  "cstCloseWithoutSaving": "Fermer sans enregistrer",
+  "cstUndoLastStroke": "Annuler le dernier trait",
+  "cstClearAll": "Tout effacer",
+  "cstDone": "Terminé",
+  "cstSignHint": "Signez avec votre doigt ou le curseur",
+  "cstGuestModeTitle": "Mode invité — Conducteur B",
+  "cstShareWithDriverB": "Partage avec le conducteur B",
+  "cstGuestQrInstructions": "Faites scanner ce QR code au conducteur B avec son smartphone pour qu’il vérifie ses informations et suive la déclaration en direct.",
+  "cstNoInstallRequired": "Aucune installation d’application requise pour le conducteur B.",
+  "cstGuestLinkCopied": "Lien invité copié dans le presse-papier !",
+  "cstCopyGuestLink": "Copier le lien d’accès invité",
+  "cstContinueOnThisDevice": "Continuer la saisie sur cet appareil",
+  "cstSealedTitle": "Constat scellé",
+  "cstSealedOnPhone": "Constat scellé sur le téléphone",
+  "cstSealedAndSent": "Constat scellé et transmis",
+  "cstSealedOfflineHint": "Pas de réseau : il sera transmis et signé par le serveur dès le retour de la connexion.",
+  "cstSealedOnlineHint": "Document officiel inaltérable signé bilatéralement.",
+  "cstOfflineCertification": "CERTIFICATION HORS-LIGNE (JWS)",
+  "cstScanQrToVerify": "Scannez ce QR Code pour certifier l’authenticité et l’intégrité du constat sans connexion au serveur.",
+  "cstCertifiedQr": "QR Code Certifié",
+  "cstEcdsaCertified": "Signature ECDSA P-256 certifiée — Zero-Dependency Verification",
+  "cstVehicleA": "Véhicule A",
+  "cstVehicleB": "Véhicule B",
+  "cstDriverA": "Conducteur A",
+  "cstDriverB": "Conducteur B",
+  "cstPlateA": "Immatriculation A",
+  "cstPlateB": "Immatriculation B",
+  "cstInsurerA": "Assurance A",
+  "cstInsurerB": "Assurance B",
+  "cstPolicyLine": "Police : {policy}",
+  "@cstPolicyLine": {
+    "placeholders": {
+      "policy": {
+        "type": "String"
+      }
+    }
+  },
+  "cstViewOfficialPdf": "Consulter l’exemplaire officiel (PDF)",
+  "cstShareSealed": "Partager le constat scellé",
+  "cstBackToHome": "Retour à l’accueil",
+  "cstPdfPreviewError": "Erreur aperçu PDF : {error}",
+  "@cstPdfPreviewError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cstPdfShareError": "Erreur partage PDF : {error}",
+  "@cstPdfShareError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cstDriverBTitle": "Informations du conducteur B",
+  "cstDriverBSubtitle": "Données nécessaires au constat, isolées de votre profil.",
+  "cstScanLicenseAi": "Scanner le permis avec l’IA",
+  "cstScanLicenseHint": "La photo est analysée localement. Vérifiez toujours les données détectées.",
+  "cstScanning": "Analyse en cours…",
+  "cstTakeLicensePhoto": "Photographier le permis",
+  "cstFullNameRequired": "Nom complet *",
+  "cstLicenseNumber": "Numéro de permis",
+  "cstLicenseExpiry": "Date de validité du permis",
+  "cstPlateRequired": "Immatriculation *",
+  "cstInsuranceSection": "ASSURANCE",
+  "cstPolicyNumber": "N° de police / attestation d’assurance",
+  "cstNoTextDetected": "Aucun texte détecté. Reprenez la photo avec plus de lumière.",
+  "cstLicenseScanned": "Permis analysé. Vérifiez les champs avant de continuer.",
+  "cstScanFailed": "Analyse impossible. Vérifiez la photo et réessayez.",
+  "cstReviewDetectedData": "Vérifier les données détectées",
+  "cstOcrWarning": "L’OCR peut faire des erreurs. Corrigez les champs avant confirmation.",
+  "cstFullName": "Nom complet",
+  "cstLicenseNumberDialog": "Numéro du permis",
+  "cstExpiryDate": "Date de validité",
+  "cstRecognizedText": "Texte reconnu par ML Kit",
+  "cstCancel": "Annuler",
+  "cstUseThisData": "Utiliser ces données",
+  "cstClearDate": "Effacer la date",
+  "cstCircumstancesTitle": "Circonstances de l’accident (FTUSA)",
+  "cstCircumstancesHint": "Cochez la ou les cases utiles pour le véhicule A (bleu) et le véhicule B (ambre).",
+  "cstBoxesA": "Véhicule A : {count} case(s)",
+  "@cstBoxesA": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cstBoxesB": "Véhicule B : {count} case(s)",
+  "@cstBoxesB": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cstCircumstancesHeader": "12. Circonstances",
+  "cstCircumstance1": "En stationnement / À l’arrêt",
+  "cstCircumstance2": "Quittait un stationnement / ouvrait une portière",
+  "cstCircumstance3": "Prenait un stationnement",
+  "cstCircumstance4": "Sortait d’un parking, lieu privé ou chemin",
+  "cstCircumstance5": "S’engageait dans un parking, lieu privé ou chemin",
+  "cstCircumstance6": "S’engageait sur une place à sens giratoire",
+  "cstCircumstance7": "Circulait sur une place à sens giratoire",
+  "cstCircumstance8": "Heurtait à l’arrière (même sens, même file)",
+  "cstCircumstance9": "Roulait dans le même sens sur une file différente",
+  "cstCircumstance10": "Changeait de file",
+  "cstCircumstance11": "Doublait",
+  "cstCircumstance12": "Virait à droite",
+  "cstCircumstance13": "Virait à gauche",
+  "cstCircumstance14": "Reculait",
+  "cstCircumstance15": "Empiétait sur la chaussée en sens inverse",
+  "cstCircumstance16": "Venait de droite (dans un carrefour)",
+  "cstCircumstance17": "N’avait pas observé un signal de priorité",
+  "cstObservations": "Observations complémentaires",
+  "cstSketchTitle": "Croquis et point de choc",
+  "cstSketchFieldTitle": "Croquis de l’accident",
+  "cstSketchHint": "Dessinez les voies, les véhicules et leur direction",
+  "cstImpactZoneTitle": "Zone de choc sur votre véhicule",
+  "cstSignInstructions": "Relisez les informations puis signez dans les deux zones.",
+  "cstSignatureA": "Signature conducteur A",
+  "cstSignatureB": "Signature conducteur B",
+  "cstShaLock": "Verrouillage SHA-256",
+  "cstShaLockHint": "Le constat sera rendu infalsifiable après la double signature.",
+  "nameLockedNotice": "Nom vérifié sur votre pièce d’identité : il ne peut plus être modifié."
+}
