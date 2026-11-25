@@ -191,7 +191,9 @@ class _VehicleFormScreenState extends State<VehicleFormScreen> {
     _model = TextEditingController(text: v?.model ?? '');
     _year = TextEditingController(text: v?.year ?? '');
     _policy = TextEditingController(text: v?.policy ?? '');
-    _insurer = TextEditingController(text: v?.insurerName ?? v?.companyName ?? '');
+    _insurer = TextEditingController(
+      text: v?.insurerName ?? v?.companyName ?? '',
+    );
     _insuranceExpiry = TextEditingController(text: v?.insuranceExpiry ?? '');
     _technicalExpiry = TextEditingController(text: v?.technicalExpiry ?? '');
     _color = TextEditingController(text: v?.color ?? '');
@@ -225,9 +227,7 @@ class _VehicleFormScreenState extends State<VehicleFormScreen> {
   Widget build(BuildContext context) {
     final t = context.t;
     return Scaffold(
-      appBar: AppBar(
-        title: Text(_isEdit ? t.vehEditVehicle : t.vehAddVehicle),
-      ),
+      appBar: AppBar(title: Text(_isEdit ? t.vehEditVehicle : t.vehAddVehicle)),
       body: Form(
         key: _form,
         child: ListView(
@@ -246,8 +246,7 @@ class _VehicleFormScreenState extends State<VehicleFormScreen> {
                           Icons.document_scanner_outlined,
                           color: context.palette.successText,
                         ),
-                        const
-                        SizedBox(width: 8),
+                        const SizedBox(width: 8),
                         Expanded(
                           child: Text(
                             t.vehScanTitle,
@@ -669,7 +668,9 @@ class _DropdownField<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DropdownButtonFormField<T>(
-    value: value,
+    // La clé recrée le champ quand le parent change la valeur.
+    key: ValueKey(value),
+    initialValue: value,
     // Demi-largeur : un libellé long (« Électrique ») débordait.
     isExpanded: true,
     decoration: InputDecoration(labelText: label),

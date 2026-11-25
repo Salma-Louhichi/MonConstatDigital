@@ -70,7 +70,10 @@ class VehicleDetailScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: AppColors.ink,
                         borderRadius: BorderRadius.circular(8),
-                        border: Border.all(color: AppColors.primaryRaised, width: 2),
+                        border: Border.all(
+                          color: AppColors.primaryRaised,
+                          width: 2,
+                        ),
                       ),
                       child: Text(
                         current.plate,
@@ -173,11 +176,17 @@ class VehicleDetailScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: AppColors.successBg,
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: AppColors.successText.withAlpha(50)),
+                      border: Border.all(
+                        color: AppColors.successText.withAlpha(50),
+                      ),
                     ),
                     child: Row(
                       children: [
-                        const Icon(Icons.shield_outlined, color: AppColors.successText, size: 28),
+                        const Icon(
+                          Icons.shield_outlined,
+                          color: AppColors.successText,
+                          size: 28,
+                        ),
                         const SizedBox(width: 12),
                         Expanded(
                           child: Column(
@@ -307,14 +316,13 @@ class VehicleDetailScreen extends StatelessWidget {
       ),
     );
 
+    if (!context.mounted) return;
     if (confirmed == true) {
       final messenger = ScaffoldMessenger.of(context);
       // Une date illisible faisait passer un contrat expiré pour valide.
       final expiry = _isoDate(expiryController.text);
       if (expiry == null || policyController.text.trim().isEmpty) {
-        messenger.showSnackBar(
-          SnackBar(content: Text(t.vehRenewInvalid)),
-        );
+        messenger.showSnackBar(SnackBar(content: Text(t.vehRenewInvalid)));
         return;
       }
       final updated = vehicle.copyWith(
@@ -327,16 +335,16 @@ class VehicleDetailScreen extends StatelessWidget {
         messenger.showSnackBar(SnackBar(content: Text(error.message)));
         return;
       }
-      messenger.showSnackBar(
-        SnackBar(content: Text(t.vehRenewSuccess)),
-      );
+      messenger.showSnackBar(SnackBar(content: Text(t.vehRenewSuccess)));
     }
   }
 
   /// JJ/MM/AAAA ou AAAA-MM-JJ → AAAA-MM-JJ ; null si la date n'existe pas.
   static String? _isoDate(String input) {
     final text = input.trim();
-    final fr = RegExp(r'^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$').firstMatch(text);
+    final fr = RegExp(
+      r'^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$',
+    ).firstMatch(text);
     final iso = RegExp(r'^(\d{4})-(\d{1,2})-(\d{1,2})$').firstMatch(text);
     final (int? y, int? m, int? d) = fr != null
         ? (int.parse(fr[3]!), int.parse(fr[2]!), int.parse(fr[1]!))
@@ -379,7 +387,7 @@ class _VehicleHero extends StatelessWidget {
       return Image.file(
         File(vehicle.photoPath!),
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => _defaultHero(),
+        errorBuilder: (_, _, _) => _defaultHero(),
       );
     }
     return _defaultHero();
@@ -520,10 +528,7 @@ class _RiskScoreCard extends StatelessWidget {
                           ),
                           Text(
                             f.description,
-                            style: TextStyle(
-                              fontSize: 11,
-                              color: p.textMuted,
-                            ),
+                            style: TextStyle(fontSize: 11, color: p.textMuted),
                           ),
                         ],
                       ),
@@ -570,10 +575,7 @@ class _ScoreRing extends StatelessWidget {
             ),
             Text(
               '/100',
-              style: TextStyle(
-                fontSize: 9,
-                color: context.palette.textMuted,
-              ),
+              style: TextStyle(fontSize: 9, color: context.palette.textMuted),
             ),
           ],
         ),
@@ -800,10 +802,8 @@ class _PhotoSection extends StatelessWidget {
               height: 180,
               width: double.infinity,
               fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => _AddPhotoButton(
-                vehicle: vehicle,
-                store: store,
-              ),
+              errorBuilder: (_, _, _) =>
+                  _AddPhotoButton(vehicle: vehicle, store: store),
             ),
           )
         else
@@ -836,9 +836,7 @@ class _AddPhotoButton extends StatelessWidget {
       },
       icon: const Icon(Icons.add_a_photo_outlined),
       label: Text(context.t.vehAddPhoto),
-      style: OutlinedButton.styleFrom(
-        minimumSize: const Size.fromHeight(52),
-      ),
+      style: OutlinedButton.styleFrom(minimumSize: const Size.fromHeight(52)),
     );
   }
 

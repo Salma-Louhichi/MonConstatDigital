@@ -141,22 +141,27 @@ class _VehicleList extends StatelessWidget {
         children: [
           const SizedBox(height: 120),
           Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(
-              archived ? Icons.archive_outlined : Icons.directions_car_outlined,
-              size: 64,
-              color: context.palette.textMuted,
-            ),
-            const SizedBox(height: 12),
-            Text(
-              archived
-                  ? context.t.vehEmptyArchived
-                  : context.t.vehEmptyActive,
-              style: TextStyle(color: context.palette.textMuted, fontSize: 16),
-            ),
-          ],
-        ),
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                archived
+                    ? Icons.archive_outlined
+                    : Icons.directions_car_outlined,
+                size: 64,
+                color: context.palette.textMuted,
+              ),
+              const SizedBox(height: 12),
+              Text(
+                archived
+                    ? context.t.vehEmptyArchived
+                    : context.t.vehEmptyActive,
+                style: TextStyle(
+                  color: context.palette.textMuted,
+                  fontSize: 16,
+                ),
+              ),
+            ],
+          ),
         ],
       );
     }
@@ -211,8 +216,7 @@ class _VehicleCard extends StatelessWidget {
                         ? Image.file(
                             File(vehicle.photoPath!),
                             fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) =>
-                                const _VehicleIcon(),
+                            errorBuilder: (_, _, _) => const _VehicleIcon(),
                           )
                         : const _VehicleIcon(),
                   ),
@@ -270,10 +274,7 @@ class _VehicleCard extends StatelessWidget {
                         ),
                         Text(
                           '/100',
-                          style: TextStyle(
-                            fontSize: 10,
-                            color: p.textMuted,
-                          ),
+                          style: TextStyle(fontSize: 10, color: p.textMuted),
                         ),
                       ],
                     ),
@@ -325,10 +326,7 @@ class _VehicleCard extends StatelessWidget {
                 children: [
                   TextButton.icon(
                     onPressed: () {
-                      open(
-                        context,
-                        VehicleDetailScreen(vehicle: vehicle),
-                      );
+                      open(context, VehicleDetailScreen(vehicle: vehicle));
                     },
                     icon: const Icon(Icons.analytics_outlined, size: 18),
                     label: Text(t.vehAiAnalysis),
@@ -386,10 +384,7 @@ class _ContractRow extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                label,
-                style: TextStyle(fontSize: 11, color: p.textMuted),
-              ),
+              Text(label, style: TextStyle(fontSize: 11, color: p.textMuted)),
               Text(
                 value,
                 style: TextStyle(
@@ -402,7 +397,7 @@ class _ContractRow extends StatelessWidget {
             ],
           ),
         ),
-        if (badge != null) badge!,
+        ?badge,
       ],
     );
   }
@@ -458,11 +453,7 @@ class _Badge extends StatelessWidget {
     ),
     child: Text(
       label,
-      style: TextStyle(
-        fontSize: 11,
-        fontWeight: FontWeight.w700,
-        color: fg,
-      ),
+      style: TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: fg),
     ),
   );
 }
@@ -481,10 +472,7 @@ class _VehicleMenu extends StatelessWidget {
         try {
           switch (action) {
             case 'edit':
-              open(
-                context,
-                VehicleFormScreen(existing: vehicle),
-              );
+              open(context, VehicleFormScreen(existing: vehicle));
             case 'archive':
               await store.archiveVehicle(vehicle);
             case 'delete':
@@ -562,4 +550,3 @@ class _VehicleMenu extends StatelessWidget {
         false;
   }
 }
-
