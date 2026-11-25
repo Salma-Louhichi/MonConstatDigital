@@ -1,8 +1,41 @@
 # Amio
 
-Application Flutter de déclaration d'accidents et de constat amiable numérique, avec une API Node.js. Projet PI, 5SAE1, Esprit.
+[![CI](https://github.com/Salma-Louhichi/Amio/actions/workflows/ci.yml/badge.svg)](https://github.com/Salma-Louhichi/Amio/actions/workflows/ci.yml)
+![Flutter](https://img.shields.io/badge/Flutter-3-02569B?logo=flutter)
+![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql)
 
-> **État actuel :** le module 1 (comptes, connexion, rôles, compagnies) utilise la vraie API. Les autres écrans utilisent encore des données fictives en mémoire.
+**Amio** est le constat amiable numérique : deux conducteurs remplissent, signent et scellent leur constat sur le téléphone, puis suivent le sinistre jusqu'à l'indemnisation.
+**Amio** is a digital accident report: two drivers fill in, sign and seal their report on a phone, then follow the claim through to settlement.
+
+Application Flutter (Android, iOS, web) en français, anglais et arabe, avec une API Node.js / PostgreSQL. Projet PI, 5SAE1, Esprit.
+
+## Fonctionnalités
+
+| | |
+|---|---|
+| **Comptes et identité** | Inscription en deux étapes, rôles (conducteur, agent, administrateur), connexion biométrique, vérification d'identité par l'IA (visage + pièce d'identité, MRZ, permis). |
+| **Véhicules et contrats** | Véhicules, contrats d'assurance, rappels avant l'échéance des documents. |
+| **Déclaration d'accident** | Assistant pas à pas avec photos, GPS, croquis et PDF conforme FTUSA. |
+| **Constat numérique** | Conducteur B invité par QR code, 17 circonstances officielles, double signature, scellement ECDSA P-256 et PDF signé. |
+| **Vérification publique** | [`verifier-pwa/`](verifier-pwa/) : une PWA sans dépendance qui vérifie un constat scellé (QR code ou PDF), hors ligne. |
+| **Sinistres** | Suivi en temps réel, messagerie agent / conducteur, rendez-vous d'expertise, synthèses et assistant par IA (Claude, OpenAI ou règles locales), tableau de bord analytique. |
+| **Vie privée** | Consentement explicite et daté (loi n° 2004-63), export de ses données en PDF, suppression du compte. |
+
+## Architecture
+
+```
+Flutter app (drift, hors ligne d'abord) ──HTTPS/JWT──▶ API Express ──Prisma──▶ PostgreSQL
+        │                                              │
+        └── PDF signé + QR (JWS) ──▶ verifier-pwa      ├── Socket.io (temps réel)
+                                                       └── IA : Claude / OpenAI, OCR, visage
+```
+
+## Qualité
+
+- `flutter analyze` sans aucun avertissement, plus de 230 tests Flutter.
+- Plus de 220 tests d'API sur une vraie base PostgreSQL.
+- Les deux suites tournent dans GitHub Actions à chaque push ([`ci.yml`](.github/workflows/ci.yml)).
 
 ## Démarrer
 
