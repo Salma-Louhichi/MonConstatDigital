@@ -5,66 +5,65 @@
 ![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql)
 
-**Amio** est le constat amiable numérique : deux conducteurs remplissent, signent et scellent leur constat sur le téléphone, puis suivent le sinistre jusqu'à l'indemnisation.
-**Amio** is a digital accident report: two drivers fill in, sign and seal their report on a phone, then follow the claim through to settlement.
+**Amio** is a digital accident report (*constat amiable*): two drivers fill in, sign and seal their report on a phone, then follow the claim through to settlement.
 
-Application Flutter (Android, iOS, web) en français, anglais et arabe, avec une API Node.js / PostgreSQL. Projet PI, 5SAE1, Esprit.
+A Flutter app (Android, iOS, web) in French, English and Arabic, backed by a Node.js / PostgreSQL API. Integrated project (PI), 5SAE1, Esprit.
 
-## Fonctionnalités
+## Features
 
 | | |
 |---|---|
-| **Comptes et identité** | Inscription en deux étapes, rôles (conducteur, agent, administrateur), connexion biométrique, vérification d'identité par l'IA (visage + pièce d'identité, MRZ, permis). |
-| **Véhicules et contrats** | Véhicules, contrats d'assurance, rappels avant l'échéance des documents. |
-| **Déclaration d'accident** | Assistant pas à pas avec photos, GPS, croquis et PDF conforme FTUSA. |
-| **Constat numérique** | Conducteur B invité par QR code, 17 circonstances officielles, double signature, scellement ECDSA P-256 et PDF signé. |
-| **Vérification publique** | [`verifier-pwa/`](verifier-pwa/) : une PWA sans dépendance qui vérifie un constat scellé (QR code ou PDF), hors ligne. |
-| **Sinistres** | Suivi en temps réel, messagerie agent / conducteur, rendez-vous d'expertise, synthèses et assistant par IA (Claude, OpenAI ou règles locales), tableau de bord analytique. |
-| **Vie privée** | Consentement explicite et daté (loi n° 2004-63), export de ses données en PDF, suppression du compte. |
+| **Accounts and identity** | Two-step sign-up, roles (driver, agent, administrator), biometric sign-in, AI identity verification (face + ID document, MRZ, driving licence). |
+| **Vehicles and contracts** | Vehicles, insurance contracts, reminders before documents expire. |
+| **Accident declaration** | Step-by-step wizard with photos, GPS, sketch and an FTUSA-compliant PDF. |
+| **Digital report** | Driver B invited by QR code, the 17 official circumstances, dual signature, ECDSA P-256 sealing and a signed PDF. |
+| **Public verification** | [`verifier-pwa/`](verifier-pwa/): a zero-dependency PWA that checks a sealed report (QR code or PDF), offline. |
+| **Claims** | Real-time tracking, agent / driver messaging, expert appointments, AI summaries and assistant (Claude, OpenAI or local rules), analytics dashboard. |
+| **Privacy** | Explicit, dated consent (Tunisian law no. 2004-63), personal data export as PDF, account deletion. |
 
 ## Architecture
 
 ```
-Flutter app (drift, hors ligne d'abord) ──HTTPS/JWT──▶ API Express ──Prisma──▶ PostgreSQL
-        │                                              │
-        └── PDF signé + QR (JWS) ──▶ verifier-pwa      ├── Socket.io (temps réel)
-                                                       └── IA : Claude / OpenAI, OCR, visage
+Flutter app (drift, offline-first) ──HTTPS/JWT──▶ Express API ──Prisma──▶ PostgreSQL
+        │                                         │
+        └── Signed PDF + QR (JWS) ──▶ verifier-pwa ├── Socket.io (real time)
+                                                  └── AI: Claude / OpenAI, OCR, face
 ```
 
-## Qualité
+## Quality
 
-- `flutter analyze` sans aucun avertissement, plus de 230 tests Flutter.
-- Plus de 220 tests d'API sur une vraie base PostgreSQL.
-- Les deux suites tournent dans GitHub Actions à chaque push ([`ci.yml`](.github/workflows/ci.yml)).
+- `flutter analyze` reports no issues; 230+ Flutter tests.
+- 220+ API tests against a real PostgreSQL database.
+- Both suites run in GitHub Actions on every push ([`ci.yml`](.github/workflows/ci.yml)).
 
-## Démarrer
+## Getting started
 
-### Application Flutter
+### Flutter app
 
-Prérequis : Flutter stable (Dart 3.10 ou plus). Pour Android, installer aussi Android Studio.
+Requirements: Flutter stable (Dart 3.10 or later). For Android, also install Android Studio.
 
-> **Windows :** cloner le projet dans un chemin sans accents ni espaces, par exemple `C:\dev\projetmobile`. Avec un accent dans le chemin, `flutter analyze` plante et les builds Android peuvent échouer. Activer aussi le mode développeur (`start ms-settings:developers`), nécessaire aux plugins Flutter.
+> **Windows:** clone the project into a path without accents or spaces, for example `C:\dev\amio`. With an accent in the path, `flutter analyze` crashes and Android builds can fail. Also enable Developer Mode (`start ms-settings:developers`), which Flutter plugins need.
 
 ```bash
 flutter pub get
-flutter devices          # liste les appareils disponibles
-flutter run -d chrome    # le plus rapide pour vérifier un écran
-flutter run              # sur le téléphone branché ou l'émulateur
+flutter devices          # list available devices
+flutter run -d chrome    # quickest way to check a screen
+flutter run              # on the connected phone or emulator
 ```
 
-L'application a besoin de l'API pour se connecter (voir ci-dessous). Sur un téléphone branché ou un émulateur, rediriger d'abord le port de l'API :
+The app needs the API to sign in (see below). On a connected phone or emulator, forward the API port first:
 
 ```bash
 adb reverse tcp:3000 tcp:3000
 ```
 
-Pour viser un autre serveur : `flutter run --dart-define=API_URL=http://192.168.1.10:3000/api`.
+To target another server: `flutter run --dart-define=API_URL=http://192.168.1.10:3000/api`.
 
-> **Erreur Java/Gradle au premier build Android :** Android Studio récent fournit Java 25, trop récent pour la version de Gradle du projet. Installer un JDK 17 puis : `flutter config --jdk-dir="C:\Program Files\Java\jdk-17"`.
+> **Java/Gradle error on the first Android build:** recent Android Studio ships Java 25, too new for the project's Gradle version. Install JDK 17, then: `flutter config --jdk-dir="C:\Program Files\Java\jdk-17"`.
 >
-> **Huawei / Xiaomi :** au premier `flutter run`, accepter l'invite « Installer via USB » sur le téléphone.
+> **Huawei / Xiaomi:** on the first `flutter run`, accept the "Install via USB" prompt on the phone.
 
-Avant chaque push :
+Before each push:
 
 ```bash
 dart format lib test
@@ -72,115 +71,115 @@ flutter analyze
 flutter test
 ```
 
-### Console d'administration (web)
+### Admin console (web)
 
-La même application sert de console aux administrateurs sur ordinateur : à partir de 1000 px de large, un compte administrateur voit une barre latérale (tableau de bord, comptes, vérification d'identité avec le score de l'IA, compagnies) au lieu des onglets du téléphone.
-
-```bash
-flutter run -d chrome                     # en développement
-flutter build web                         # version à déployer (dossier build/web)
-```
-
-Les bases SQLite (drift) marchent aussi dans le navigateur grâce à `web/sqlite3.wasm` et `web/drift_worker.js` (release drift 2.35.3) : à mettre à jour avec le paquet drift. Chaque base passe `web: driftWebOptions` (`lib/core/data/drift_web.dart`).
-
-### API et base de données
-
-Prérequis : Docker.
+The same app serves as the administrators' console on desktop: from 1000 px wide, an administrator account gets a sidebar (dashboard, accounts, identity verification with the AI score, companies) instead of the phone tabs.
 
 ```bash
-docker compose up --build    # API sur http://localhost:3000, PostgreSQL sur le port 5434
+flutter run -d chrome                     # development
+flutter build web                         # deployable build (build/web folder)
 ```
 
-Vérification : `http://localhost:3000/api/health` répond `{"status":"ok"}`.
+The SQLite databases (drift) also work in the browser thanks to `web/sqlite3.wasm` and `web/drift_worker.js` (drift release 2.35.3); update them along with the drift package. Every database passes `web: driftWebOptions` (`lib/core/data/drift_web.dart`).
 
-Comptes de démonstration créés au démarrage (mot de passe `Password123!`) :
+### API and database
 
-| Rôle | E-mail |
+Requirement: Docker.
+
+```bash
+docker compose up --build    # API on http://localhost:3000, PostgreSQL on port 5434
+```
+
+Check: `http://localhost:3000/api/health` returns `{"status":"ok"}`.
+
+Demo accounts created at startup (password `Password123!`):
+
+| Role | Email |
 |---|---|
-| Conducteur | `sami@example.com` |
+| Driver | `sami@example.com` |
 | Agent | `leila@assurance.tn` |
-| Administrateur | `admin@monconstat.tn` |
+| Administrator | `admin@monconstat.tn` |
 
-Sans fournisseur configuré, les codes OTP et de réinitialisation s'affichent dans les logs : `docker compose logs api`.
+With no provider configured, OTP and password-reset codes are printed in the logs: `docker compose logs api`.
 
-Pour développer sans conteneur pour l'API :
+To develop the API outside a container:
 
 ```bash
 docker compose up db
 cd backend
 cp .env.example .env
 npm install
-npm run db:deploy            # applique les migrations
-npm run db:seed              # comptes de démonstration
+npm run db:deploy            # apply migrations
+npm run db:seed              # demo accounts
 npm run dev
-npm test                     # nécessite la base : docker compose up db
+npm test                     # needs the database: docker compose up db
 ```
 
-Pour modifier le schéma : éditer `backend/prisma/schema.prisma`, puis `npm run db:migrate`.
+To change the schema: edit `backend/prisma/schema.prisma`, then run `npm run db:migrate`.
 
-Contrat d'API (Swagger) : `http://localhost:3000/api/docs`, à partir de `backend/openapi.yaml`. Chaque module y documente ses endpoints ; un test vérifie que chaque route documentée existe.
+API contract (Swagger): `http://localhost:3000/api/docs`, generated from `backend/openapi.yaml`. Each module documents its endpoints there; a test checks that every documented route exists.
 
-## Organisation du code
+## Code layout
 
 ```text
 lib/
-  app/                 Démarrage, navigation par rôle, accueil, assistance
+  app/                 Startup, role-based navigation, home, support
   core/
-    theme/             Couleurs et thème (DESIGN.md)
-    state/             AppScope : accès aux stores
-  shared/              Éléments communs à plusieurs modules
+    theme/             Colours and theme (DESIGN.md)
+    state/             AppScope: access to the stores
+  shared/              Widgets shared across modules
   modules/
     users/             Module 1
     vehicles/          Module 2
     accident/          Module 3
     constat/           Module 4
     claims/            Module 5
-backend/src/modules/   Mêmes modules côté API
+backend/src/modules/   The same modules on the API side
 ```
 
-Chaque module Flutter suit la même structure : `models/`, `state/`, `screens/`, `widgets/`. Chaque module backend ajoute ses endpoints dans son fichier `<module>.routes.js`.
+Each Flutter module follows the same structure: `models/`, `state/`, `screens/`, `widgets/`. Each backend module adds its endpoints in its own `<module>.routes.js` file.
 
-| Module | Périmètre | Flutter | Backend | Dépend de |
+| Module | Scope | Flutter | Backend | Depends on |
 |---|---|---|---|---|
-| 1 | Utilisateurs, rôles, administration | `modules/users` | `users` | Aucun |
-| 2 | Véhicules et contrats | `modules/vehicles` | `vehicles` | 1 |
-| 3 | Déclaration d'accident | `modules/accident` | `accidents` | 1, 2 |
-| 4 | Constat numérique | `modules/constat` | `constats` | 3 |
-| 5 | Sinistres, suivi, communication | `modules/claims` | `claims` | 4 |
+| 1 | Users, roles, administration | `modules/users` | `users` | None |
+| 2 | Vehicles and contracts | `modules/vehicles` | `vehicles` | 1 |
+| 3 | Accident declaration | `modules/accident` | `accidents` | 1, 2 |
+| 4 | Digital report | `modules/constat` | `constats` | 3 |
+| 5 | Claims, tracking, communication | `modules/claims` | `claims` | 4 |
 
-### Utiliser l'authentification dans un module
+### Using authentication in a module
 
-Côté API, protéger les routes avec le middleware du module 1 :
+On the API side, protect routes with the module 1 middleware:
 
 ```js
 import { requireAuth, requireRole } from '../../middleware/auth.js';
 
-router.use(requireAuth);                              // req.user contient le compte connecté
-router.get('/', requireRole('AGENT', 'ADMIN'), ...);  // limite à certains rôles
+router.use(requireAuth);                              // req.user holds the signed-in account
+router.get('/', requireRole('AGENT', 'ADMIN'), ...);  // restrict to some roles
 ```
 
-Côté Flutter, passer par le client partagé. Il ajoute le jeton, le renouvelle si besoin et lève une `ApiException` dont le message peut être affiché :
+On the Flutter side, go through the shared client. It adds the token, refreshes it when needed and throws an `ApiException` whose message can be shown to the user:
 
 ```dart
 final response = await AppScope.of(context).api.get('/vehicles');
 final user = AppScope.of(context).users.currentUser;
-// Compagnies et agences (module 1), disponibles hors ligne grâce à SQLite :
+// Companies and agencies (module 1), available offline through SQLite:
 await AppScope.of(context).companies.load();
 final companies = AppScope.of(context).companies.companies;
 final star = AppScope.of(context).companies.byId(companyId);
 ```
 
-### Compagnie d'assurance : du contrat jusqu'à l'agent
+### Insurance company: from contract to agent
 
-Pour qu'un sinistre arrive aux agents de la bonne compagnie, chaque maillon garde l'**identifiant** de la compagnie (pas son nom en texte libre) :
+For a claim to reach the agents of the right company, every link in the chain keeps the company's **ID** (not its name as free text):
 
 ```text
-Contrat (module 2) --companyId--> Accident (module 3, véhicule déclaré) --> Sinistre (module 5, companyId) --> agents de cette compagnie
+Contract (module 2) --companyId--> Accident (module 3, declared vehicle) --> Claim (module 5, companyId) --> that company's agents
 ```
 
-- **Module 2 :** choisir l'assureur avec `CompanyPicker` (liste du module 1, disponible hors ligne) et enregistrer `company.id` (et `agency.id`) dans le contrat. Côté API, vérifier avec `assertCompanyExists(companyId)`.
-- **Module 3 :** enregistrer le véhicule concerné dans la déclaration.
-- **Module 5 :** reprendre le `companyId` du contrat sur le sinistre, et filtrer les listes avec `companyScope(req)` : l'agent ne voit que sa compagnie, l'administrateur tout.
+- **Module 2:** pick the insurer with `CompanyPicker` (the module 1 list, available offline) and store `company.id` (and `agency.id`) on the contract. On the API side, check it with `assertCompanyExists(companyId)`.
+- **Module 3:** store the vehicle involved in the declaration.
+- **Module 5:** copy the contract's `companyId` onto the claim, and filter lists with `companyScope(req)`: an agent only sees their own company, an administrator sees everything.
 
 ```dart
 CompanyPicker(
@@ -196,40 +195,40 @@ await assertCompanyExists(req.body.companyId);                       // module 2
 prisma.claim.findMany({ where: { ...companyScope(req), status } });   // module 5
 ```
 
-### Vérification d'identité par l'IA
+### AI identity verification
 
-Le conducteur choisit sa pièce (CIN, permis ou passeport), la photographie, puis fait une **vérification du visage** : l'API tire au hasard l'ordre des consignes (de face, puis tête à gauche et à droite) et l'application prend une photo par consigne.
+The driver picks their document (national ID card, driving licence or passport), photographs it, then completes a **face check**: the API randomises the order of the prompts (face forward, then head turned left and right) and the app takes one photo per prompt.
 
-La reconnaissance faciale tourne **dans l'API**, sans service extérieur ([`backend/src/lib/face.js`](backend/src/lib/face.js)) : face-api et TensorFlow.js en WebAssembly. Trois modèles : détection du visage (SSD MobileNet v1), 68 points du visage, et empreinte de 128 nombres (ResNet-34).
+Face recognition runs **inside the API**, with no external service ([`backend/src/lib/face.js`](backend/src/lib/face.js)): face-api and TensorFlow.js on WebAssembly. Three models: face detection (SSD MobileNet v1), 68 facial landmarks, and a 128-number face descriptor (ResNet-34).
 
-1. **Recto de la pièce :** refusé s'il ne contient aucun visage. Une photo de travers est remise à l'endroit (les 4 sens sont essayés). L'IA lit la pièce ([`backend/src/lib/ocr.js`](backend/src/lib/ocr.js), Tesseract) : numéro et champs en arabe de la CIN, MRZ du passeport avec ses chiffres de contrôle, numéro du permis.
-2. **Verso :** refusé s'il montre un visage (c'est un recto). Code-barres ou date de délivrance reconnus : indice pour la validation automatique.
-3. **Visage vivant :** sur le téléphone, ML Kit détecte le visage et prend chaque photo au bon moment (sinon compte à rebours, sur le web). Sur le serveur : un seul visage par photo, de face puis tourné des deux côtés, et la même personne sur les trois photos. Une photo imprimée ou un écran ne passe pas.
-4. **Décision :** validée automatiquement seulement si le visage ressemble à la photo de la pièce (60 % au moins), le numéro saisi est celui lu, le verso est reconnu, le nom du compte figure sur la pièce (en arabe, comparé par ses consonnes : الطرابلسي ≈ Trabelsi) et la pièce est valide. Sinon, la file de l'administrateur, avec la liste des contrôles.
-5. **Refus :** 24 h d'attente, 3 refus au plus ; un refus grave bloque. L'administrateur débloque et voit l'historique des demandes.
+1. **Front of the document:** rejected if it contains no face. A rotated photo is turned upright (all 4 orientations are tried). The AI reads the document ([`backend/src/lib/ocr.js`](backend/src/lib/ocr.js), Tesseract): the number and Arabic fields of the ID card, the passport MRZ with its check digits, the licence number.
+2. **Back:** rejected if it shows a face (that's a front side). A recognised barcode or issue date counts towards automatic approval.
+3. **Liveness:** on the phone, ML Kit detects the face and takes each photo at the right moment (a countdown on the web). On the server: one face per photo, facing forward then turned to both sides, and the same person in all three photos. A printed photo or a screen doesn't pass.
+4. **Decision:** approved automatically only if the face matches the document photo (at least 60 %), the number entered is the one read, the back is recognised, the account name appears on the document (in Arabic, compared by consonants: الطرابلسي ≈ Trabelsi) and the document is valid. Otherwise it goes to the administrator's queue, with the list of checks.
+5. **Rejection:** 24 h wait, at most 3 rejections; a serious rejection blocks the account. The administrator can unblock it and sees the history of requests.
 
-Contrôles croisés : la date de naissance de la pièce d'identité est comparée à celle du permis scanné dans le profil. Le tableau de bord montre le bilan de l'IA (part validée seule, ressemblance moyenne, comptes bloqués).
+Cross-checks: the date of birth on the ID document is compared with the one on the driving licence scanned in the profile. The dashboard shows the AI's track record (share approved automatically, average similarity, blocked accounts).
 
-Pour la loi n° 2004-63, l'analyse du visage demande un **accord explicite et daté**, aucune photo n'est envoyée à un tiers, l'empreinte du visage n'est jamais enregistrée et la photo du visage est **effacée dès la décision**. Chaque compte a droit à 30 analyses par heure, pour que personne ne sature le serveur. Les autres modules exigent une identité vérifiée avec `requireVerifiedIdentity`.
+Under law no. 2004-63, face analysis requires **explicit, dated consent**, no photo is sent to a third party, the face descriptor is never stored and the face photo is **deleted as soon as a decision is made**. Each account gets 30 analyses per hour, so no one can overload the server. Other modules require a verified identity through `requireVerifiedIdentity`.
 
-## Workflow Git
+## Git workflow
 
-1. Créer une branche depuis `main` à jour : `git switch -c feature/<sujet>`.
-2. Garder les changements dans le dossier du module concerné.
-3. Ouvrir une pull request vers `main` ; la CI doit passer avant la fusion.
+1. Create a branch from an up-to-date `main`: `git switch -c feature/<topic>`.
+2. Keep changes inside the folder of the module concerned.
+3. Open a pull request to `main`; CI must pass before merging.
 
-**Règles :**
+**Rules:**
 
-- Ne pas pousser directement sur `main`.
-- Le schéma Prisma et le contrat d'API (Swagger) sont mis à jour avant le code.
-- Pas de Firebase.
-- Ne jamais committer de secrets : le fichier `.env` reste local.
+- Don't push directly to `main`.
+- The Prisma schema and the API contract (Swagger) are updated before the code.
+- No Firebase.
+- Never commit secrets: the `.env` file stays local.
 
 ## Design
 
-Toute l'interface suit [DESIGN.md](DESIGN.md).
+The whole interface follows [DESIGN.md](DESIGN.md).
 
-- Couleurs : `context.palette.surface`, `context.palette.text`… (`lib/core/theme/app_palette.dart`), jamais une couleur fixe ni `Colors.white` / `Colors.grey`, sinon l'écran casse en mode sombre. `AppColors` reste pour ce qui ne change pas (ambre, conducteurs A et B).
-- Textes : dans `lib/l10n/app_fr.arb` (puis `app_en.arb`, `app_ar.arb`), utilisés avec `context.t.maCle`. L'arabe s'affiche de droite à gauche : préférer `EdgeInsetsDirectional` et `PositionedDirectional`.
-- Polices : Manrope, Bricolage Grotesque et JetBrains Mono, déjà incluses dans `assets/fonts/`.
-- Le conducteur A est toujours bleu et le conducteur B toujours ambre.
+- Colours: `context.palette.surface`, `context.palette.text`… (`lib/core/theme/app_palette.dart`), never a hard-coded colour or `Colors.white` / `Colors.grey`, or the screen breaks in dark mode. `AppColors` is kept for what never changes (amber, drivers A and B).
+- Strings: in `lib/l10n/app_fr.arb` (then `app_en.arb`, `app_ar.arb`), used through `context.t.myKey`. Arabic is right-to-left: prefer `EdgeInsetsDirectional` and `PositionedDirectional`.
+- Fonts: Manrope, Bricolage Grotesque and JetBrains Mono, already bundled in `assets/fonts/`.
+- Driver A is always blue and driver B always amber.
