@@ -610,19 +610,19 @@ router.post('/me/identity/submit', requireAuth, ai, async (req, res) => {
 
 const DECISION_TEXTS = {
   FR: {
-    approved: 'Amio : votre identité est vérifiée. Vous pouvez signer vos constats.',
+    approved: 'Mon Constat : votre identité est vérifiée. Vous pouvez signer vos constats.',
     rejected: (reason) =>
-      `Amio : votre vérification d'identité a été refusée. Motif : ${reason}. Vous pouvez envoyer de nouvelles photos depuis votre profil.`,
+      `Mon Constat : votre vérification d'identité a été refusée. Motif : ${reason}. Vous pouvez envoyer de nouvelles photos depuis votre profil.`,
   },
   EN: {
-    approved: 'Amio: your identity is verified. You can now sign your accident reports.',
+    approved: 'Mon Constat: your identity is verified. You can now sign your accident reports.',
     rejected: (reason) =>
-      `Amio: your identity check was declined. Reason: ${reason}. You can send new photos from your profile.`,
+      `Mon Constat: your identity check was declined. Reason: ${reason}. You can send new photos from your profile.`,
   },
   AR: {
-    approved: 'Amio: تم التحقق من هويتك. يمكنك الآن توقيع المعاينات.',
+    approved: 'Mon Constat: تم التحقق من هويتك. يمكنك الآن توقيع المعاينات.',
     rejected: (reason) =>
-      `Amio: تم رفض التحقق من هويتك. السبب: ${reason}. يمكنك إرسال صور جديدة من ملفك الشخصي.`,
+      `Mon Constat: تم رفض التحقق من هويتك. السبب: ${reason}. يمكنك إرسال صور جديدة من ملفك الشخصي.`,
   },
 };
 
@@ -635,7 +635,7 @@ function notifyDecision(user) {
   // Sans attendre : la décision est enregistrée même si l'envoi échoue.
   void Promise.allSettled([
     notifier.sendToPhone(user.phone, text),
-    notifier.sendMail(user.email, 'Amio', text),
+    notifier.sendMail(user.email, 'Mon Constat', text),
   ]).then((results) => {
     for (const r of results) {
       if (r.status === 'rejected') console.error('Décision d’identité', r.reason);

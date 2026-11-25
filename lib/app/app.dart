@@ -94,7 +94,7 @@ class _MonConstatAppState extends State<MonConstatApp>
       builder: (context, home) => MaterialApp(
         navigatorKey: _navigator,
         debugShowCheckedModeBanner: false,
-        title: 'Amio',
+        title: 'Mon Constat Digital',
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
         themeMode: stores.users.themeMode,

@@ -1,4 +1,4 @@
-# Amio: design system
+# Mon Constat Digital: design system
 
 Reference for building the Flutter screens so all 5 modules look like one app.
 

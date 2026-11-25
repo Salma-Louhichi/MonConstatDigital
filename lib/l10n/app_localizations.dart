@@ -1579,13 +1579,13 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In fr, this message translates to:
-  /// **'Amio'**
+  /// **'Mon Constat Digital'**
   String get appTitle;
 
   /// No description provided for @brand.
   ///
   /// In fr, this message translates to:
-  /// **'Amio'**
+  /// **'Mon Constat'**
   String get brand;
 
   /// No description provided for @save.
@@ -1777,7 +1777,7 @@ abstract class AppLocalizations {
   /// No description provided for @biometricLoginReason.
   ///
   /// In fr, this message translates to:
-  /// **'Connectez-vous à Amio'**
+  /// **'Connectez-vous à Mon Constat'**
   String get biometricLoginReason;
 
   /// No description provided for @biometricEnableReason.
@@ -2893,7 +2893,7 @@ abstract class AppLocalizations {
   /// No description provided for @exportDataSubtitle.
   ///
   /// In fr, this message translates to:
-  /// **'PDF de tout ce qu\'Amio garde sur vous'**
+  /// **'PDF de tout ce que Mon Constat garde sur vous'**
   String get exportDataSubtitle;
 
   /// No description provided for @deleteAccount.
@@ -3739,7 +3739,7 @@ abstract class AppLocalizations {
   /// No description provided for @biometricConsentLabel.
   ///
   /// In fr, this message translates to:
-  /// **'J\'accepte que mon visage soit analysé pour vérifier mon identité. Analyse faite sur les serveurs d\'Amio, photo effacée dès la décision (loi n° 2004-63).'**
+  /// **'J\'accepte que mon visage soit analysé pour vérifier mon identité. Analyse faite sur les serveurs de Mon Constat, photo effacée dès la décision (loi n° 2004-63).'**
   String get biometricConsentLabel;
 
   /// No description provided for @errorAiQuota.
@@ -4423,7 +4423,7 @@ abstract class AppLocalizations {
   /// No description provided for @onbWelcomeNewTitle.
   ///
   /// In fr, this message translates to:
-  /// **'Bienvenue sur\nAmio'**
+  /// **'Bienvenue sur\nMon Constat'**
   String get onbWelcomeNewTitle;
 
   /// No description provided for @onbProfileTitle.

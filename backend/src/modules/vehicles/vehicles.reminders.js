@@ -17,7 +17,7 @@ function dayOf(date) {
 function message(vehicle, kind, days, date) {
   const what = kind === 'insurance' ? 'Votre assurance' : 'Votre visite technique';
   const when = days === 1 ? 'demain' : `dans ${days} jours`;
-  return `Amio : ${what} pour ${vehicle.brand} ${vehicle.model} (${vehicle.plate}) expire ${when}, le ${formatDate(date)}.`;
+  return `Mon Constat : ${what} pour ${vehicle.brand} ${vehicle.model} (${vehicle.plate}) expire ${when}, le ${formatDate(date)}.`;
 }
 
 /**

@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: Amio API
+  title: Mon Constat Digital API
   version: 0.2.0
   description: |
     Contrat d'API partagé par les 5 modules. Chaque module documente ici ses endpoints.

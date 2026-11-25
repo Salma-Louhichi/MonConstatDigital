@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Amio : module 5",
+    "title": "Mon Constat Digital : module 5",
     "version": "1.0.0",
     "description": "Sinistres, suivi, notifications et messagerie. Hors production, identité par en-têtes x-user-id, x-user-role et x-user-name en attendant le module 1."
   },

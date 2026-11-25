@@ -84,14 +84,14 @@ function buildSigDict({
     safeId ? `/ConstatId(${safeId})` : '',
     safeSha ? `/ContentSha256(${safeSha})` : '',
     safeSigSha ? `/SignaturesSha256(${safeSigSha})` : '',
-    `/Reason(Certifie inalterable - Amio ES256)`,
+    `/Reason(Certifie inalterable - Mon Constat Digital ES256)`,
   ].filter(Boolean);
 
   return `<<${metaParts.join('')}>>`;
 }
 
 /**
- * Indique si le buffer PDF contient déjà une signature ECDSA Amio.
+ * Indique si le buffer PDF contient déjà une signature ECDSA Mon Constat Digital.
  */
 export function hasPdfSignature(pdfBuffer) {
   if (!Buffer.isBuffer(pdfBuffer)) return false;
@@ -247,7 +247,7 @@ export async function verifyPdfBuffer(pdfBuffer, publicJwk = CONSTAT_PUBLIC_JWK)
   if (filterIdx === -1) {
     return {
       valid: false,
-      reason: 'Aucune signature électronique ECDSA Amio trouvée dans ce PDF.',
+      reason: 'Aucune signature électronique ECDSA Mon Constat Digital trouvée dans ce PDF.',
     };
   }
 

@@ -279,7 +279,7 @@ async function sendPhoneCode(user) {
   if (!code) return false;
   await notifier.sendToPhone(
     user.phone,
-    `Amio : votre code est ${code}.`,
+    `Mon Constat Digital : votre code est ${code}.`,
   );
   return true;
 }

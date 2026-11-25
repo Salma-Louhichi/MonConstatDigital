@@ -842,10 +842,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get claimsAnswersBySource => 'الإجابات حسب المصدر';
 
   @override
-  String get appTitle => 'Amio';
+  String get appTitle => 'Mon Constat Digital';
 
   @override
-  String get brand => 'Amio';
+  String get brand => 'Mon Constat';
 
   @override
   String get save => 'حفظ';
@@ -942,7 +942,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get hidePassword => 'إخفاء كلمة المرور';
 
   @override
-  String get biometricLoginReason => 'سجّل الدخول إلى Amio';
+  String get biometricLoginReason => 'سجّل الدخول إلى Mon Constat';
 
   @override
   String get biometricEnableReason => 'أكّد لتفعيل الدخول بالبصمة';
@@ -1555,7 +1555,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get exportData => 'تنزيل بياناتي';
 
   @override
-  String get exportDataSubtitle => 'ملف PDF بكل ما يحتفظ به Amio عنك';
+  String get exportDataSubtitle => 'ملف PDF بكل ما يحتفظ به Mon Constat عنك';
 
   @override
   String get deleteAccount => 'حذف حسابي';
@@ -2047,7 +2047,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get biometricConsentLabel =>
-      'أوافق على تحليل وجهي للتحقق من هويتي. يتم التحليل على خوادم Amio وتُحذف الصورة فور اتخاذ القرار (القانون عدد 63 لسنة 2004).';
+      'أوافق على تحليل وجهي للتحقق من هويتي. يتم التحليل على خوادم Mon Constat وتُحذف الصورة فور اتخاذ القرار (القانون عدد 63 لسنة 2004).';
 
   @override
   String get errorAiQuota =>
@@ -2423,7 +2423,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get registerStepAccount => 'حسابك';
 
   @override
-  String get onbWelcomeNewTitle => 'مرحبا بك في\nAmio';
+  String get onbWelcomeNewTitle => 'مرحبا بك في\nMon Constat';
 
   @override
   String get onbProfileTitle => 'لنتعرف عليك';

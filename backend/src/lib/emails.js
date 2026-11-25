@@ -11,7 +11,7 @@ const TEXTS = {
     validity: 'Il est valable 15 minutes et ne sert qu’une fois.',
     ignore:
       'Si vous n’avez rien demandé, ignorez cet e-mail : votre mot de passe ne change pas.',
-    footer: 'Amio, le constat amiable sans papier.',
+    footer: 'Mon Constat Digital, le constat amiable sans papier.',
   },
   EN: {
     subject: 'Your password reset code',
@@ -20,7 +20,7 @@ const TEXTS = {
     validity: 'It is valid for 15 minutes and works only once.',
     ignore:
       'If you did not ask for this, ignore this email: your password stays the same.',
-    footer: 'Amio, paper-free accident reports.',
+    footer: 'Mon Constat Digital, paper-free accident reports.',
   },
   AR: {
     subject: 'رمز إعادة تعيين كلمة المرور',
@@ -29,7 +29,7 @@ const TEXTS = {
     validity: 'الرمز صالح لمدة 15 دقيقة ولمرة واحدة فقط.',
     ignore:
       'إذا لم تطلب ذلك، تجاهل هذا البريد: كلمة المرور لن تتغيّر.',
-    footer: 'Amio، المعاينة الودية بدون ورق.',
+    footer: 'Mon Constat Digital، المعاينة الودية بدون ورق.',
   },
 };
 
@@ -62,7 +62,7 @@ export function passwordResetEmail({ firstName, language, code }) {
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:#FFFFFF;border:1px solid #E4E8EE;border-radius:20px;overflow:hidden">
         <tr><td style="background:#0B1626;padding:22px 24px">
           <span style="display:inline-block;background:#F5A524;color:#0B1626;font-weight:800;border-radius:10px;padding:6px 10px;font-size:14px">MC</span>
-          <span style="color:#FFFFFF;font-weight:800;font-size:18px;padding:0 10px">Amio</span>
+          <span style="color:#FFFFFF;font-weight:800;font-size:18px;padding:0 10px">Mon Constat</span>
         </td></tr>
         <tr><td dir="${dir}" style="padding:28px 24px 8px;font-size:15px;line-height:1.5">
           <p style="margin:0 0 12px">${t.hello(name)}</p>
@@ -90,7 +90,7 @@ const LOGIN_TEXTS = {
   FR: {
     subject: 'Nouvelle connexion à votre compte',
     body: (device, when) =>
-      `Nouvelle connexion à votre compte Amio depuis ${device}, le ${when}.`,
+      `Nouvelle connexion à votre compte Mon Constat depuis ${device}, le ${when}.`,
     notYou:
       "Ce n'était pas vous ? Changez votre mot de passe, puis déconnectez cet appareil dans Profil > Sécurité > Appareils connectés.",
     unknownDevice: 'un nouvel appareil',
@@ -99,7 +99,7 @@ const LOGIN_TEXTS = {
   EN: {
     subject: 'New sign-in to your account',
     body: (device, when) =>
-      `New sign-in to your Amio account from ${device}, on ${when}.`,
+      `New sign-in to your Mon Constat account from ${device}, on ${when}.`,
     notYou:
       'Not you? Change your password, then sign this device out in Profile > Security > Connected devices.',
     unknownDevice: 'a new device',
@@ -108,7 +108,7 @@ const LOGIN_TEXTS = {
   AR: {
     subject: 'تسجيل دخول جديد إلى حسابك',
     body: (device, when) =>
-      `تسجيل دخول جديد إلى حسابك في Amio من ${device}، بتاريخ ${when}.`,
+      `تسجيل دخول جديد إلى حسابك في Mon Constat من ${device}، بتاريخ ${when}.`,
     notYou:
       'لست أنت؟ غيّر كلمة المرور، ثم أخرج هذا الجهاز من الملف > الأمان > الأجهزة المتصلة.',
     unknownDevice: 'جهاز جديد',
@@ -138,7 +138,7 @@ export function newLoginEmail({ firstName, language, deviceName, when }) {
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:#FFFFFF;border:1px solid #E4E8EE;border-radius:20px;overflow:hidden">
         <tr><td style="background:#0B1626;padding:22px 24px">
           <span style="display:inline-block;background:#F5A524;color:#0B1626;font-weight:800;border-radius:10px;padding:6px 10px;font-size:14px">MC</span>
-          <span style="color:#FFFFFF;font-weight:800;font-size:18px;padding:0 10px">Amio</span>
+          <span style="color:#FFFFFF;font-weight:800;font-size:18px;padding:0 10px">Mon Constat</span>
         </td></tr>
         <tr><td dir="${dir}" style="padding:26px 24px;font-size:15px;line-height:1.5">
           <p style="margin:0 0 12px">${hello(escape(firstName))}</p>
@@ -163,7 +163,7 @@ const CONSTAT_TEXTS = {
     hashLabel: 'Empreinte de sécurité (SHA-256) :',
     attachedInfo:
       'L’exemplaire officiel du constat au format PDF est joint à cet e-mail. Ce document est infalsifiable et a été transmis à votre assureur.',
-    footer: 'Amio, le constat amiable sans papier.',
+    footer: 'Mon Constat Digital, le constat amiable sans papier.',
   },
   EN: {
     subject: 'Your sealed digital accident report',
@@ -173,7 +173,7 @@ const CONSTAT_TEXTS = {
     hashLabel: 'Security fingerprint (SHA-256):',
     attachedInfo:
       'The official PDF accident report is attached to this email. It is tamper-proof and has been transmitted to your insurer.',
-    footer: 'Amio, paper-free accident reports.',
+    footer: 'Mon Constat Digital, paper-free accident reports.',
   },
   AR: {
     subject: 'المعاينة الودية الرقمية المعتمدة والمختومة',
@@ -183,7 +183,7 @@ const CONSTAT_TEXTS = {
     hashLabel: 'البصمة الرقمية للأمان (SHA-256):',
     attachedInfo:
       'النسخة الرسمية من المعاينة الودية بصيغة PDF مرفقة مع هذه الرسالة. هذه الوثيقة غير قابلة للتعديل وتم إرسالها لشركة التأمين.',
-    footer: 'Amio، المعاينة الودية بدون ورق.',
+    footer: 'Mon Constat Digital، المعاينة الودية بدون ورق.',
   },
 };
 
@@ -212,7 +212,7 @@ export function constatSealedEmail({ name, place, date, sha256Hash, language = '
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background:#FFFFFF;border:1px solid #E4E8EE;border-radius:20px;overflow:hidden">
         <tr><td style="background:#0B1626;padding:22px 24px">
           <span style="display:inline-block;background:#F5A524;color:#0B1626;font-weight:800;border-radius:10px;padding:6px 10px;font-size:14px">MC</span>
-          <span style="color:#FFFFFF;font-weight:800;font-size:18px;padding:0 10px">Amio</span>
+          <span style="color:#FFFFFF;font-weight:800;font-size:18px;padding:0 10px">Mon Constat</span>
         </td></tr>
         <tr><td dir="${dir}" style="padding:28px 24px 8px;font-size:15px;line-height:1.5">
           <h2 style="margin:0 0 14px;color:#1537A8;font-size:20px">${t.title}</h2>

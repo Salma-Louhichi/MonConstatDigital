@@ -1,6 +1,6 @@
 # Plan de Réalisation — Module 4 : Constat Numérique
 
-**Projet :** Amio (5SAE1 — Esprit, Projet Intégré)  
+**Projet :** Mon Constat Digital (5SAE1 — Esprit, Projet Intégré)  
 **Responsable :** Salma Louhichi  
 **Branche Git dédiée :** `module-4`  
 **Dépendances directes :** Module 3 (Déclaration d'accident, photos, GPS)  

@@ -169,8 +169,8 @@ class AccidentPdfService {
     );
     final document = pw.Document(
       title: 'Constat amiable - ${draft.place}',
-      author: 'Amio',
-      creator: 'Amio',
+      author: 'Mon Constat Digital',
+      creator: 'Mon Constat Digital',
       theme: pw.ThemeData.withFont(base: regular, bold: bold),
     );
     final photos = await _loadPhotos(draft);
@@ -343,7 +343,7 @@ class AccidentPdfService {
                     ),
                     pw.SizedBox(width: 6),
                     pw.Text(
-                      'MODÈLE CONFORME FTUSA • AMIO',
+                      'MODÈLE CONFORME FTUSA • MON CONSTAT DIGITAL',
                       style: pw.TextStyle(
                         color: _muted,
                         fontSize: 6.8,
@@ -1334,7 +1334,7 @@ class AccidentPdfService {
           ),
           pw.SizedBox(height: 1.5),
           pw.Text(
-            'Document généré par Amio le ${_dateTime(sealedTimestamp)}'
+            'Document généré par Mon Constat Digital le ${_dateTime(sealedTimestamp)}'
             '${constatRef != null && constatRef.isNotEmpty ? ' (Dossier $constatRef)' : ''}'
             '$hashSegment. '
             '${hasQr ? 'Le QR Code JWS et la signature ECDSA P-256 intégrée au PDF garantissent l’intégrité des données et des deux signatures.' : 'Les informations et signatures ci-dessus proviennent de la déclaration établie conjointement par les conducteurs A et B.'}',
@@ -1382,7 +1382,7 @@ class AccidentPdfService {
       mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
       children: [
         pw.Text(
-          'Amio • Constat Amiable Tunisien (conforme FTUSA) — À transmettre sous 5 jours ouvrés à votre assureur',
+          'Mon Constat Digital • Constat Amiable Tunisien (conforme FTUSA) — À transmettre sous 5 jours ouvrés à votre assureur',
           style: pw.TextStyle(fontSize: 6.8, color: _muted),
         ),
         pw.Text(

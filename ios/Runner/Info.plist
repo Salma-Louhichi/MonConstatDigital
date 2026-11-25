@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Amio</string>
+	<string>Mon Constat</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Amio</string>
+	<string>Mon Constat</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -46,7 +46,7 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Face ID permet de vous connecter à Amio sans mot de passe.</string>
+	<string>Face ID permet de vous connecter à Mon Constat sans mot de passe.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>L'appareil photo sert à photographier votre profil et votre permis.</string>
 	<key>NSPhotoLibraryUsageDescription</key>

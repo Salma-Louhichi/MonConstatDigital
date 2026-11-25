@@ -35,7 +35,7 @@ router.get('/me/export', requireAuth, async (req, res) => {
   ]);
   res.set(
     'Content-Disposition',
-    'attachment; filename="mes-donnees-amio.json"',
+    'attachment; filename="mes-donnees-mon-constat.json"',
   );
   res.json({
     exportedAt: new Date().toISOString(),

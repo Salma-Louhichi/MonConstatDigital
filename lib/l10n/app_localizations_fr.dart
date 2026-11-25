@@ -843,10 +843,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get claimsAnswersBySource => 'Réponses par source';
 
   @override
-  String get appTitle => 'Amio';
+  String get appTitle => 'Mon Constat Digital';
 
   @override
-  String get brand => 'Amio';
+  String get brand => 'Mon Constat';
 
   @override
   String get save => 'Enregistrer';
@@ -944,7 +944,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get hidePassword => 'Masquer le mot de passe';
 
   @override
-  String get biometricLoginReason => 'Connectez-vous à Amio';
+  String get biometricLoginReason => 'Connectez-vous à Mon Constat';
 
   @override
   String get biometricEnableReason =>
@@ -1567,7 +1567,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get exportData => 'Télécharger mes données';
 
   @override
-  String get exportDataSubtitle => 'PDF de tout ce qu\'Amio garde sur vous';
+  String get exportDataSubtitle =>
+      'PDF de tout ce que Mon Constat garde sur vous';
 
   @override
   String get deleteAccount => 'Supprimer mon compte';
@@ -2073,7 +2074,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get biometricConsentLabel =>
-      'J\'accepte que mon visage soit analysé pour vérifier mon identité. Analyse faite sur les serveurs d\'Amio, photo effacée dès la décision (loi n° 2004-63).';
+      'J\'accepte que mon visage soit analysé pour vérifier mon identité. Analyse faite sur les serveurs de Mon Constat, photo effacée dès la décision (loi n° 2004-63).';
 
   @override
   String get errorAiQuota =>
@@ -2455,7 +2456,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get registerStepAccount => 'Votre compte';
 
   @override
-  String get onbWelcomeNewTitle => 'Bienvenue sur\nAmio';
+  String get onbWelcomeNewTitle => 'Bienvenue sur\nMon Constat';
 
   @override
   String get onbProfileTitle => 'Faisons connaissance';

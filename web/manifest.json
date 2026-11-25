@@ -1,11 +1,11 @@
 {
-    "name": "Amio",
-    "short_name": "Amio",
+    "name": "Mon Constat Digital",
+    "short_name": "Mon Constat",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0B1626",
     "theme_color": "#1537A8",
-    "description": "Amio : le constat amiable numérique / the digital accident report.",
+    "description": "Mon Constat Digital : le constat amiable numérique / the digital accident report.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

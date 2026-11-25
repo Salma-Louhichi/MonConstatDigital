@@ -1,12 +1,12 @@
 /**
- * Amio - Standalone Zero-Dependency Verifier, QR Scanner & PDF Integrity Checker
+ * Mon Constat Digital - Standalone Zero-Dependency Verifier, QR Scanner & PDF Integrity Checker
  *
  * Verifies ECDSA P-256 JWS tokens and signed PDF (/ByteRange) directly in the browser using the W3C Web Crypto API.
  * 100% client-side - ZERO network calls (CSP connect-src 'none').
  * QR decoding uses native BarcodeDetector when available with local jsQR fallback.
  */
 
-// Clé publique officielle de certification Amio (JWK RFC 7517)
+// Clé publique officielle de certification Mon Constat Digital (JWK RFC 7517)
 const PUBLIC_JWK = {
   kty: 'EC',
   crv: 'P-256',
@@ -249,7 +249,7 @@ async function verifyPdfBytesInBrowser(bytes) {
     return {
       valid: false,
       reason:
-        'Aucune signature cryptographique ECDSA Amio trouvée : ce PDF a été modifié, réenregistré ou n’est pas officiel.',
+        'Aucune signature cryptographique ECDSA Mon Constat Digital trouvée : ce PDF a été modifié, réenregistré ou n’est pas officiel.',
     };
   }
 
@@ -350,7 +350,7 @@ function extractJwsFromQrText(rawText) {
 
   if (!JWS_TOKEN_REGEX.test(candidate)) {
     throw new Error(
-      'QR Code non reconnu : aucun jeton JWS Amio valide détecté.'
+      'QR Code non reconnu : aucun jeton JWS Mon Constat Digital valide détecté.'
     );
   }
 
@@ -865,7 +865,7 @@ function renderResult(result, errorMsg = null) {
       'valid',
       '✓',
       'SCELLÉ & AUTHENTIQUE',
-      "Certifié inaltérable par l'autorité Amio (ECDSA P-256). Vérification locale réussie sans dépendance serveur."
+      "Certifié inaltérable par l'autorité Mon Constat Digital (ECDSA P-256). Vérification locale réussie sans dépendance serveur."
     )
   );
 

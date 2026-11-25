@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "Amio" "\0"
+            VALUE "FileDescription", "Mon Constat Digital" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "amio" "\0"
+            VALUE "InternalName", "mon_constat" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "amio.exe" "\0"
-            VALUE "ProductName", "Amio" "\0"
+            VALUE "OriginalFilename", "mon_constat.exe" "\0"
+            VALUE "ProductName", "Mon Constat Digital" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

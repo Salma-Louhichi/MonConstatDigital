@@ -1,11 +1,11 @@
-# Amio
+# Mon Constat Digital
 
 [![CI](https://github.com/Salma-Louhichi/Amio/actions/workflows/ci.yml/badge.svg)](https://github.com/Salma-Louhichi/Amio/actions/workflows/ci.yml)
 ![Flutter](https://img.shields.io/badge/Flutter-3-02569B?logo=flutter)
 ![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql)
 
-**Amio** is a digital accident report (*constat amiable*): two drivers fill in, sign and seal their report on a phone, then follow the claim through to settlement.
+**Mon Constat Digital** is a digital accident report (*constat amiable*): two drivers fill in, sign and seal their report on a phone, then follow the claim through to settlement.
 
 A Flutter app (Android, iOS, web) in French, English and Arabic, backed by a Node.js / PostgreSQL API. Integrated project (PI), 5SAE1, Esprit.
 
@@ -42,7 +42,7 @@ Flutter app (drift, offline-first) ──HTTPS/JWT──▶ Express API ──Pr
 
 Requirements: Flutter stable (Dart 3.10 or later). For Android, also install Android Studio.
 
-> **Windows:** clone the project into a path without accents or spaces, for example `C:\dev\amio`. With an accent in the path, `flutter analyze` crashes and Android builds can fail. Also enable Developer Mode (`start ms-settings:developers`), which Flutter plugins need.
+> **Windows:** clone the project into a path without accents or spaces, for example `C:\dev\mon-constat`. With an accent in the path, `flutter analyze` crashes and Android builds can fail. Also enable Developer Mode (`start ms-settings:developers`), which Flutter plugins need.
 
 ```bash
 flutter pub get

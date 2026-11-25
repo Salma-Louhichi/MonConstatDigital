@@ -67,7 +67,7 @@ Future<Uint8List> buildDataExportPdf(Map<String, dynamic> export) async {
   );
 
   final doc = pw.Document(
-    title: 'Mes données - Amio',
+    title: 'Mes données - Mon Constat Digital',
     theme: pw.ThemeData.withFont(base: regular, bold: bold),
   );
   doc.addPage(
@@ -84,7 +84,7 @@ Future<Uint8List> buildDataExportPdf(Map<String, dynamic> export) async {
           mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
           children: [
             pw.Text(
-              'Amio — Mes données',
+              'Mon Constat Digital — Mes données',
               style: pw.TextStyle(
                 font: bold,
                 fontSize: 14,

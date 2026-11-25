@@ -254,7 +254,7 @@ void main() {
       });
 
       // Compte créé : l'accueil s'ouvre, sans pouvoir passer le nom.
-      expect(find.text('Bienvenue sur\nAmio'), findsOneWidget);
+      expect(find.text('Bienvenue sur\nMon Constat'), findsOneWidget);
       expect(find.byKey(const Key('onb-skip-all')), findsNothing);
       await tester.tap(find.byKey(const Key('onb-start')));
       await tester.pumpAndSettle();
